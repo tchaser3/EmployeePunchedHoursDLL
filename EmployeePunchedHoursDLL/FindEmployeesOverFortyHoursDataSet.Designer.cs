@@ -283,9 +283,11 @@ namespace EmployeePunchedHoursDLL {
             
             private global::System.Data.DataColumn columnLastName;
             
-            private global::System.Data.DataColumn columnPunchedHours;
+            private global::System.Data.DataColumn columnHomeOffice;
             
-            private global::System.Data.DataColumn columnTransactionDate;
+            private global::System.Data.DataColumn columnManagerID;
+            
+            private global::System.Data.DataColumn columnPunchedHours;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -338,17 +340,25 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn PunchedHoursColumn {
+            public global::System.Data.DataColumn HomeOfficeColumn {
                 get {
-                    return this.columnPunchedHours;
+                    return this.columnHomeOffice;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
+            public global::System.Data.DataColumn ManagerIDColumn {
                 get {
-                    return this.columnTransactionDate;
+                    return this.columnManagerID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PunchedHoursColumn {
+                get {
+                    return this.columnPunchedHours;
                 }
             }
             
@@ -389,13 +399,14 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeesOverFortyHoursRow AddFindEmployeesOverFortyHoursRow(string FirstName, string LastName, decimal PunchedHours, System.DateTime TransactionDate) {
+            public FindEmployeesOverFortyHoursRow AddFindEmployeesOverFortyHoursRow(string FirstName, string LastName, string HomeOffice, int ManagerID, decimal PunchedHours) {
                 FindEmployeesOverFortyHoursRow rowFindEmployeesOverFortyHoursRow = ((FindEmployeesOverFortyHoursRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         FirstName,
                         LastName,
-                        PunchedHours,
-                        TransactionDate};
+                        HomeOffice,
+                        ManagerID,
+                        PunchedHours};
                 rowFindEmployeesOverFortyHoursRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFindEmployeesOverFortyHoursRow);
                 return rowFindEmployeesOverFortyHoursRow;
@@ -420,8 +431,9 @@ namespace EmployeePunchedHoursDLL {
             internal void InitVars() {
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
+                this.columnHomeOffice = base.Columns["HomeOffice"];
+                this.columnManagerID = base.Columns["ManagerID"];
                 this.columnPunchedHours = base.Columns["PunchedHours"];
-                this.columnTransactionDate = base.Columns["TransactionDate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -431,16 +443,19 @@ namespace EmployeePunchedHoursDLL {
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLastName);
+                this.columnHomeOffice = new global::System.Data.DataColumn("HomeOffice", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHomeOffice);
+                this.columnManagerID = new global::System.Data.DataColumn("ManagerID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnManagerID);
                 this.columnPunchedHours = new global::System.Data.DataColumn("PunchedHours", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPunchedHours);
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
                 this.columnFirstName.AllowDBNull = false;
                 this.columnFirstName.MaxLength = 2147483647;
                 this.columnLastName.AllowDBNull = false;
                 this.columnLastName.MaxLength = 2147483647;
+                this.columnHomeOffice.AllowDBNull = false;
+                this.columnHomeOffice.MaxLength = 2147483647;
                 this.columnPunchedHours.AllowDBNull = false;
-                this.columnTransactionDate.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -605,6 +620,34 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string HomeOffice {
+                get {
+                    return ((string)(this[this.tableFindEmployeesOverFortyHours.HomeOfficeColumn]));
+                }
+                set {
+                    this[this.tableFindEmployeesOverFortyHours.HomeOfficeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ManagerID {
+                get {
+                    try {
+                        return ((int)(this[this.tableFindEmployeesOverFortyHours.ManagerIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ManagerID\' in table \'FindEmployeesOverFortyHours\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableFindEmployeesOverFortyHours.ManagerIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public decimal PunchedHours {
                 get {
                     return ((decimal)(this[this.tableFindEmployeesOverFortyHours.PunchedHoursColumn]));
@@ -616,13 +659,14 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime TransactionDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tableFindEmployeesOverFortyHours.TransactionDateColumn]));
-                }
-                set {
-                    this[this.tableFindEmployeesOverFortyHours.TransactionDateColumn] = value;
-                }
+            public bool IsManagerIDNull() {
+                return this.IsNull(this.tableFindEmployeesOverFortyHours.ManagerIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetManagerIDNull() {
+                this[this.tableFindEmployeesOverFortyHours.ManagerIDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -787,8 +831,9 @@ namespace EmployeePunchedHoursDLL.FindEmployeesOverFortyHoursDataSetTableAdapter
             tableMapping.DataSetTable = "FindEmployeesOverFortyHours";
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
+            tableMapping.ColumnMappings.Add("HomeOffice", "HomeOffice");
+            tableMapping.ColumnMappings.Add("ManagerID", "ManagerID");
             tableMapping.ColumnMappings.Add("PunchedHours", "PunchedHours");
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

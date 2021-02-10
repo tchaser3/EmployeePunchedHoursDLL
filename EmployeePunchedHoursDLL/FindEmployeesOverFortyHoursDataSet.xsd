@@ -24,8 +24,9 @@
             <Mappings>
               <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
               <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="HomeOffice" DataSetColumn="HomeOffice" />
+              <Mapping SourceColumn="ManagerID" DataSetColumn="ManagerID" />
               <Mapping SourceColumn="PunchedHours" DataSetColumn="PunchedHours" />
-              <Mapping SourceColumn="TransactionDate" DataSetColumn="TransactionDate" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -54,8 +55,15 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="HomeOffice" msprop:Generator_ColumnVarNameInTable="columnHomeOffice" msprop:Generator_ColumnPropNameInRow="HomeOffice" msprop:Generator_ColumnPropNameInTable="HomeOfficeColumn" msprop:Generator_UserColumnName="HomeOffice">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ManagerID" msprop:Generator_ColumnVarNameInTable="columnManagerID" msprop:Generator_ColumnPropNameInRow="ManagerID" msprop:Generator_ColumnPropNameInTable="ManagerIDColumn" msprop:Generator_UserColumnName="ManagerID" type="xs:int" minOccurs="0" />
               <xs:element name="PunchedHours" msprop:Generator_ColumnVarNameInTable="columnPunchedHours" msprop:Generator_ColumnPropNameInRow="PunchedHours" msprop:Generator_ColumnPropNameInTable="PunchedHoursColumn" msprop:Generator_UserColumnName="PunchedHours" type="xs:decimal" />
-              <xs:element name="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
