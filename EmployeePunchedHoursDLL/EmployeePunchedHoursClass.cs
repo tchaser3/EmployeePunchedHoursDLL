@@ -34,6 +34,24 @@ namespace EmployeePunchedHoursDLL
         FindEmployeesOverFortyHoursDataSet aFindEmployeesOverFortyHoursDataSet;
         FindEmployeesOverFortyHoursDataSetTableAdapters.FindEmployeesOverFortyHoursTableAdapter aFindEmployeesOverFortyHoursTableAdapter;
 
+        FindDuplicateEmployeePunchedHoursDataSet aFindDuplicateEmployeePunchedHoursDataSet;
+        FindDuplicateEmployeePunchedHoursDataSetTableAdapters.FindDuplicateEmployeePunchedHoursTableAdapter aFindDuplicateEmployeePunchedHoursTableAdpater;
+
+        public FindDuplicateEmployeePunchedHoursDataSet FindDuplicateEmployeePunchedHours(DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindDuplicateEmployeePunchedHoursDataSet = new FindDuplicateEmployeePunchedHoursDataSet();
+                aFindDuplicateEmployeePunchedHoursTableAdpater = new FindDuplicateEmployeePunchedHoursDataSetTableAdapters.FindDuplicateEmployeePunchedHoursTableAdapter();
+                aFindDuplicateEmployeePunchedHoursTableAdpater.Fill(aFindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHours, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Duplicate Employee Punched Hours " + Ex.Message);
+            }
+
+            return aFindDuplicateEmployeePunchedHoursDataSet;
+        }
         public FindEmployeesOverFortyHoursDataSet FindEmployeesOverFortyHours(DateTime datPayPeriod)
         {
             try
