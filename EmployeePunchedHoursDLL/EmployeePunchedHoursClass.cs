@@ -31,6 +31,24 @@ namespace EmployeePunchedHoursDLL
         FindEmployeePunchesByManagerIDDataSet aFindEmployeePunchesByManagerIDDataSet;
         FindEmployeePunchesByManagerIDDataSetTableAdapters.FindEmployeePunchesByManagerIDTableAdapter aFindEmployeePunchesByManagerIDTableAdapter;
 
+        FindEmployeesOverFortyHoursDataSet aFindEmployeesOverFortyHoursDataSet;
+        FindEmployeesOverFortyHoursDataSetTableAdapters.FindEmployeesOverFortyHoursTableAdapter aFindEmployeesOverFortyHoursTableAdapter;
+
+        public FindEmployeesOverFortyHoursDataSet FindEmployeesOverFortyHours(DateTime datPayPeriod)
+        {
+            try
+            {
+                aFindEmployeesOverFortyHoursDataSet = new FindEmployeesOverFortyHoursDataSet();
+                aFindEmployeesOverFortyHoursTableAdapter = new FindEmployeesOverFortyHoursDataSetTableAdapters.FindEmployeesOverFortyHoursTableAdapter();
+                aFindEmployeesOverFortyHoursTableAdapter.Fill(aFindEmployeesOverFortyHoursDataSet.FindEmployeesOverFortyHours, datPayPeriod);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Employees Over Forty Hours " + Ex.Message);
+            }
+
+            return aFindEmployeesOverFortyHoursDataSet;
+        }
         public FindEmployeePunchesByManagerIDDataSet FindEmployeePunchesByManagerID(int intManagerID, DateTime datStartDate, DateTime datEndDate)
         {
             try
