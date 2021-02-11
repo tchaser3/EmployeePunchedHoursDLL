@@ -37,6 +37,26 @@ namespace EmployeePunchedHoursDLL
         FindDuplicateEmployeePunchedHoursDataSet aFindDuplicateEmployeePunchedHoursDataSet;
         FindDuplicateEmployeePunchedHoursDataSetTableAdapters.FindDuplicateEmployeePunchedHoursTableAdapter aFindDuplicateEmployeePunchedHoursTableAdpater;
 
+        RemoveEmplolyeePunchedHoursEntryTableAdapters.QueriesTableAdapter aRemoveEmployeePunchedHoursTableAdapter;
+
+        public bool RemoveEmployeePunchedHours(int intTransactionID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aRemoveEmployeePunchedHoursTableAdapter = new RemoveEmplolyeePunchedHoursEntryTableAdapters.QueriesTableAdapter();
+                aRemoveEmployeePunchedHoursTableAdapter.RemoveEmployeePunchedHours(intTransactionID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Remove Employee Punched Hours " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
         public FindDuplicateEmployeePunchedHoursDataSet FindDuplicateEmployeePunchedHours(DateTime datTransactionDate)
         {
             try

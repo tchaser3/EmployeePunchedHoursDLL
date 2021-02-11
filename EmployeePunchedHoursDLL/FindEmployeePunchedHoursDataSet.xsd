@@ -24,6 +24,7 @@
               </DbSource>
             </MainSource>
             <Mappings>
+              <Mapping SourceColumn="TransactionID" DataSetColumn="TransactionID" />
               <Mapping SourceColumn="TransactionDate" DataSetColumn="TransactionDate" />
               <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
               <Mapping SourceColumn="PayID" DataSetColumn="PayID" />
@@ -42,6 +43,7 @@
         <xs:element name="FindEmployeePunchedHours" msprop:Generator_TableClassName="FindEmployeePunchedHoursDataTable" msprop:Generator_TableVarName="tableFindEmployeePunchedHours" msprop:Generator_TablePropName="FindEmployeePunchedHours" msprop:Generator_RowDeletingName="FindEmployeePunchedHoursRowDeleting" msprop:Generator_RowChangingName="FindEmployeePunchedHoursRowChanging" msprop:Generator_RowEvHandlerName="FindEmployeePunchedHoursRowChangeEventHandler" msprop:Generator_RowDeletedName="FindEmployeePunchedHoursRowDeleted" msprop:Generator_UserTableName="FindEmployeePunchedHours" msprop:Generator_RowChangedName="FindEmployeePunchedHoursRowChanged" msprop:Generator_RowEvArgName="FindEmployeePunchedHoursRowChangeEvent" msprop:Generator_RowClassName="FindEmployeePunchedHoursRow">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
               <xs:element name="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
               <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" />
               <xs:element name="PayID" msprop:Generator_ColumnVarNameInTable="columnPayID" msprop:Generator_ColumnPropNameInRow="PayID" msprop:Generator_ColumnPropNameInTable="PayIDColumn" msprop:Generator_UserColumnName="PayID" type="xs:int" />
@@ -51,5 +53,9 @@
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FindEmployeePunchedHours" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
   </xs:element>
 </xs:schema>
