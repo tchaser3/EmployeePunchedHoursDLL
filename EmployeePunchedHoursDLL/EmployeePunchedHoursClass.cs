@@ -39,6 +39,90 @@ namespace EmployeePunchedHoursDLL
 
         RemoveEmplolyeePunchedHoursEntryTableAdapters.QueriesTableAdapter aRemoveEmployeePunchedHoursTableAdapter;
 
+        AlohaEmployeePunchesDataSet aAlohaEmployeePunchesDataSet;
+        AlohaEmployeePunchesDataSetTableAdapters.alohaemployeepunchesTableAdapter aAlohaEmployeePunchesTableAdapter;
+
+        InsertIntoAholaEmployeePunchEntryTableAdapters.QueriesTableAdapter aInsertIntoAholaEmployeePunchTableAdapter;
+
+        FindAholaEmployeePunchForVerificationDataSet aFindAholaEmployeePunchForVerificationDataSet;
+        FindAholaEmployeePunchForVerificationDataSetTableAdapters.FindAholaEmployeePunchForVerificationTableAdapter aFindAholaEmployeePunchForVerificationTableAdapter;
+
+        FindAlohaEmployeePunchesByManagerDataSet aFindAlohaEmployeePunchesByManagerDataSet;
+        FindAlohaEmployeePunchesByManagerDataSetTableAdapters.FindAlohaEmployeesPunchesByManagerTableAdapter aFindAlohaEmployeePunchesByManagerTableAdapter;
+
+        public FindAlohaEmployeePunchesByManagerDataSet FindAlohaPunchesByManager(int intManagerID, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAlohaEmployeePunchesByManagerDataSet = new FindAlohaEmployeePunchesByManagerDataSet();
+                aFindAlohaEmployeePunchesByManagerTableAdapter = new FindAlohaEmployeePunchesByManagerDataSetTableAdapters.FindAlohaEmployeesPunchesByManagerTableAdapter();
+                aFindAlohaEmployeePunchesByManagerTableAdapter.Fill(aFindAlohaEmployeePunchesByManagerDataSet.FindAlohaEmployeesPunchesByManager, intManagerID, datStartDate, datEndDate);  
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Aloha Punches By Manager " + Ex.Message);
+            }
+
+            return aFindAlohaEmployeePunchesByManagerDataSet;
+        }
+        public FindAholaEmployeePunchForVerificationDataSet FindAholaEmployeePunchForVerification(int intEmployeeID, DateTime datStartDate, DateTime datEndDate, decimal decDailyHours)
+        {
+            try
+            {
+                aFindAholaEmployeePunchForVerificationDataSet = new FindAholaEmployeePunchForVerificationDataSet();
+                aFindAholaEmployeePunchForVerificationTableAdapter = new FindAholaEmployeePunchForVerificationDataSetTableAdapters.FindAholaEmployeePunchForVerificationTableAdapter();
+                aFindAholaEmployeePunchForVerificationTableAdapter.Fill(aFindAholaEmployeePunchForVerificationDataSet.FindAholaEmployeePunchForVerification, intEmployeeID, datStartDate, datEndDate, decDailyHours);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Ahola Employee Punch For Verification " + Ex.Message);
+            }
+
+            return aFindAholaEmployeePunchForVerificationDataSet;
+        }
+        public bool InsertIntoAholaEmployeePunch(int intEmployeeID, DateTime datStartDate, DateTime datEndDate, decimal decDailyHours)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aInsertIntoAholaEmployeePunchTableAdapter = new InsertIntoAholaEmployeePunchEntryTableAdapters.QueriesTableAdapter();
+                aInsertIntoAholaEmployeePunchTableAdapter.InsertIntoAholaEmployeePunch(intEmployeeID, datStartDate, datEndDate, decDailyHours);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Insert Into Ahola Employee Punch " + Ex.Message);
+            }
+
+            return blnFatalError;
+        }
+        public AlohaEmployeePunchesDataSet GetAlohaEmployeePunchesInfo()
+        {
+            try
+            {
+                aAlohaEmployeePunchesDataSet = new AlohaEmployeePunchesDataSet();
+                aAlohaEmployeePunchesTableAdapter = new AlohaEmployeePunchesDataSetTableAdapters.alohaemployeepunchesTableAdapter();
+                aAlohaEmployeePunchesTableAdapter.Fill(aAlohaEmployeePunchesDataSet.alohaemployeepunches);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Get Aloha Employee Info " + Ex.Message);
+            }
+
+            return aAlohaEmployeePunchesDataSet;
+        }
+        public void UpdateAholaEmployeePunchesDB(AlohaEmployeePunchesDataSet aAlohaEmployeePunchesDataSet)
+        {
+            try
+            {
+                aAlohaEmployeePunchesTableAdapter = new AlohaEmployeePunchesDataSetTableAdapters.alohaemployeepunchesTableAdapter();
+                aAlohaEmployeePunchesTableAdapter.Update(aAlohaEmployeePunchesDataSet.alohaemployeepunches);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Updated Aloha Employee DB " + Ex.Message);
+            }
+        }
         public bool RemoveEmployeePunchedHours(int intTransactionID)
         {
             bool blnFatalError = false;

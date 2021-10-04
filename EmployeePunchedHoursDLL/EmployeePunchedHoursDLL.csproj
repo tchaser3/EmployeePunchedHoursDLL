@@ -44,16 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlohaEmployeePunchesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlohaEmployeePunchesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EmployeePunchedHoursClass.cs" />
     <Compile Include="EmployeePunchedHoursDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeePunchedHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindAholaEmployeePunchForVerificationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAholaEmployeePunchForVerificationDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindAllEmployeePunchedHoursDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FindAllEmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindAlohaEmployeePunchesByManagerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAlohaEmployeePunchesByManagerDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FindDuplicateEmployeePunchedHoursDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -80,6 +95,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InsertEmployeePunchedHoursEntry.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InsertIntoAholaEmployeePunchEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertIntoAholaEmployeePunchEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -93,6 +113,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AlohaEmployeePunchesDataSet.xsc">
+      <DependentUpon>AlohaEmployeePunchesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlohaEmployeePunchesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlohaEmployeePunchesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlohaEmployeePunchesDataSet.xss">
+      <DependentUpon>AlohaEmployeePunchesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="app.config" />
     <None Include="EmployeePunchedHoursDataSet.xsc">
       <DependentUpon>EmployeePunchedHoursDataSet.xsd</DependentUpon>
@@ -105,6 +136,17 @@
     <None Include="EmployeePunchedHoursDataSet.xss">
       <DependentUpon>EmployeePunchedHoursDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FindAholaEmployeePunchForVerificationDataSet.xsc">
+      <DependentUpon>FindAholaEmployeePunchForVerificationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaEmployeePunchForVerificationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAholaEmployeePunchForVerificationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAholaEmployeePunchForVerificationDataSet.xss">
+      <DependentUpon>FindAholaEmployeePunchForVerificationDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindAllEmployeePunchedHoursDataSet.xsc">
       <DependentUpon>FindAllEmployeePunchedHoursDataSet.xsd</DependentUpon>
     </None>
@@ -115,6 +157,17 @@
     </None>
     <None Include="FindAllEmployeePunchedHoursDataSet.xss">
       <DependentUpon>FindAllEmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaEmployeePunchesByManagerDataSet.xsc">
+      <DependentUpon>FindAlohaEmployeePunchesByManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaEmployeePunchesByManagerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAlohaEmployeePunchesByManagerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAlohaEmployeePunchesByManagerDataSet.xss">
+      <DependentUpon>FindAlohaEmployeePunchesByManagerDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindDuplicateEmployeePunchedHoursDataSet.xsc">
       <DependentUpon>FindDuplicateEmployeePunchedHoursDataSet.xsd</DependentUpon>
@@ -170,6 +223,17 @@
     </None>
     <None Include="InsertEmployeePunchedHoursEntry.xss">
       <DependentUpon>InsertEmployeePunchedHoursEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertIntoAholaEmployeePunchEntry.xsc">
+      <DependentUpon>InsertIntoAholaEmployeePunchEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertIntoAholaEmployeePunchEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertIntoAholaEmployeePunchEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertIntoAholaEmployeePunchEntry.xss">
+      <DependentUpon>InsertIntoAholaEmployeePunchEntry.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
