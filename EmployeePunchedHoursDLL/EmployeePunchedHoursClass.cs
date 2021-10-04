@@ -50,6 +50,24 @@ namespace EmployeePunchedHoursDLL
         FindAlohaEmployeePunchesByManagerDataSet aFindAlohaEmployeePunchesByManagerDataSet;
         FindAlohaEmployeePunchesByManagerDataSetTableAdapters.FindAlohaEmployeesPunchesByManagerTableAdapter aFindAlohaEmployeePunchesByManagerTableAdapter;
 
+        FindAholaEmployeeTotalHoursDataSet aFindAholaEmployeeTotalHoursDataSet;
+        FindAholaEmployeeTotalHoursDataSetTableAdapters.FindAholaEmployeeTotalHoursTableAdapter aFindAholaEmployeeTotalHoursTableAdapter;
+
+        public FindAholaEmployeeTotalHoursDataSet FindAholaEmployeeTotalHours(DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAholaEmployeeTotalHoursDataSet = new FindAholaEmployeeTotalHoursDataSet();
+                aFindAholaEmployeeTotalHoursTableAdapter = new FindAholaEmployeeTotalHoursDataSetTableAdapters.FindAholaEmployeeTotalHoursTableAdapter();
+                aFindAholaEmployeeTotalHoursTableAdapter.Fill(aFindAholaEmployeeTotalHoursDataSet.FindAholaEmployeeTotalHours, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Ahola Employee Total Hours " + Ex.Message);
+            }
+
+            return aFindAholaEmployeeTotalHoursDataSet;
+        }
         public FindAlohaEmployeePunchesByManagerDataSet FindAlohaPunchesByManager(int intManagerID, DateTime datStartDate, DateTime datEndDate)
         {
             try
