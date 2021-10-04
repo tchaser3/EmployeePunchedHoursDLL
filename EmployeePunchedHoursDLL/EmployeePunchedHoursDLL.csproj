@@ -85,6 +85,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeePunchedHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindEmployeePunchedHoursForValidationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeePunchedHoursForValidationDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindEmployeePunchesByManagerIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -206,6 +211,17 @@
     </None>
     <None Include="FindEmployeePunchedHoursDataSet.xss">
       <DependentUpon>FindEmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeePunchedHoursForValidationDataSet.xsc">
+      <DependentUpon>FindEmployeePunchedHoursForValidationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeePunchedHoursForValidationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeePunchedHoursForValidationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeePunchedHoursForValidationDataSet.xss">
+      <DependentUpon>FindEmployeePunchedHoursForValidationDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeePunchesByManagerIDDataSet.xsc">
       <DependentUpon>FindEmployeePunchesByManagerIDDataSet.xsd</DependentUpon>

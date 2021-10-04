@@ -53,6 +53,24 @@ namespace EmployeePunchedHoursDLL
         FindAholaEmployeeTotalHoursDataSet aFindAholaEmployeeTotalHoursDataSet;
         FindAholaEmployeeTotalHoursDataSetTableAdapters.FindAholaEmployeeTotalHoursTableAdapter aFindAholaEmployeeTotalHoursTableAdapter;
 
+        FindEmployeePunchedHoursForValidationDataSet aFindEmployeePunchedHoursForValidationDataSet;
+        FindEmployeePunchedHoursForValidationDataSetTableAdapters.FindEmployeePunchedHoursForValidationTableAdapter aFindEmployeePunchedHoursForValidationTableAdapter;
+
+        public FindEmployeePunchedHoursForValidationDataSet FindEmployeePunchedHoursForValidation(DateTime datTransactionDate, int intEmployeeID, int intPayID)
+        {
+            try
+            {
+                aFindEmployeePunchedHoursForValidationDataSet = new FindEmployeePunchedHoursForValidationDataSet();
+                aFindEmployeePunchedHoursForValidationTableAdapter = new FindEmployeePunchedHoursForValidationDataSetTableAdapters.FindEmployeePunchedHoursForValidationTableAdapter();
+                aFindEmployeePunchedHoursForValidationTableAdapter.Fill(aFindEmployeePunchedHoursForValidationDataSet.FindEmployeePunchedHoursForValidation, datTransactionDate, intEmployeeID, intPayID);  
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Employee Punched Hours For Validation " + Ex.Message);
+            }
+
+            return aFindEmployeePunchedHoursForValidationDataSet;
+        }
         public FindAholaEmployeeTotalHoursDataSet FindAholaEmployeeTotalHours(DateTime datStartDate, DateTime datEndDate)
         {
             try
