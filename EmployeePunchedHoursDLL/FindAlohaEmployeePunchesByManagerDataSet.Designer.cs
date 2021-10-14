@@ -283,6 +283,8 @@ namespace EmployeePunchedHoursDLL {
             
             private global::System.Data.DataColumn columnStartDate;
             
+            private global::System.Data.DataColumn columnEndDate;
+            
             private global::System.Data.DataColumn columnFirstName;
             
             private global::System.Data.DataColumn columnLastName;
@@ -335,6 +337,14 @@ namespace EmployeePunchedHoursDLL {
             public global::System.Data.DataColumn StartDateColumn {
                 get {
                     return this.columnStartDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EndDateColumn {
+                get {
+                    return this.columnEndDate;
                 }
             }
             
@@ -399,11 +409,12 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindAlohaEmployeesPunchesByManagerRow AddFindAlohaEmployeesPunchesByManagerRow(System.DateTime StartDate, string FirstName, string LastName, decimal DailyHours) {
+            public FindAlohaEmployeesPunchesByManagerRow AddFindAlohaEmployeesPunchesByManagerRow(System.DateTime StartDate, System.DateTime EndDate, string FirstName, string LastName, decimal DailyHours) {
                 FindAlohaEmployeesPunchesByManagerRow rowFindAlohaEmployeesPunchesByManagerRow = ((FindAlohaEmployeesPunchesByManagerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         StartDate,
+                        EndDate,
                         FirstName,
                         LastName,
                         DailyHours};
@@ -438,6 +449,7 @@ namespace EmployeePunchedHoursDLL {
             internal void InitVars() {
                 this.columnTransactionID = base.Columns["TransactionID"];
                 this.columnStartDate = base.Columns["StartDate"];
+                this.columnEndDate = base.Columns["EndDate"];
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
                 this.columnDailyHours = base.Columns["DailyHours"];
@@ -450,6 +462,8 @@ namespace EmployeePunchedHoursDLL {
                 base.Columns.Add(this.columnTransactionID);
                 this.columnStartDate = new global::System.Data.DataColumn("StartDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStartDate);
+                this.columnEndDate = new global::System.Data.DataColumn("EndDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEndDate);
                 this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
@@ -463,6 +477,7 @@ namespace EmployeePunchedHoursDLL {
                 this.columnTransactionID.ReadOnly = true;
                 this.columnTransactionID.Unique = true;
                 this.columnStartDate.AllowDBNull = false;
+                this.columnEndDate.AllowDBNull = false;
                 this.columnFirstName.AllowDBNull = false;
                 this.columnFirstName.MaxLength = 2147483647;
                 this.columnLastName.AllowDBNull = false;
@@ -627,6 +642,17 @@ namespace EmployeePunchedHoursDLL {
                 }
                 set {
                     this[this.tableFindAlohaEmployeesPunchesByManager.StartDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime EndDate {
+                get {
+                    return ((global::System.DateTime)(this[this.tableFindAlohaEmployeesPunchesByManager.EndDateColumn]));
+                }
+                set {
+                    this[this.tableFindAlohaEmployeesPunchesByManager.EndDateColumn] = value;
                 }
             }
             
@@ -825,6 +851,7 @@ namespace EmployeePunchedHoursDLL.FindAlohaEmployeePunchesByManagerDataSetTableA
             tableMapping.DataSetTable = "FindAlohaEmployeesPunchesByManager";
             tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
             tableMapping.ColumnMappings.Add("StartDate", "StartDate");
+            tableMapping.ColumnMappings.Add("EndDate", "EndDate");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
             tableMapping.ColumnMappings.Add("DailyHours", "DailyHours");
