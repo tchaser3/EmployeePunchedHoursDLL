@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindAllEmployeePunchedHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindAlohaEmployeeHoursOverDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAlohaEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindAlohaEmployeePunchesByManagerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -178,6 +183,17 @@
     </None>
     <None Include="FindAllEmployeePunchedHoursDataSet.xss">
       <DependentUpon>FindAllEmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaEmployeeHoursOverDateRangeDataSet.xsc">
+      <DependentUpon>FindAlohaEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaEmployeeHoursOverDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAlohaEmployeeHoursOverDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAlohaEmployeeHoursOverDateRangeDataSet.xss">
+      <DependentUpon>FindAlohaEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindAlohaEmployeePunchesByManagerDataSet.xsc">
       <DependentUpon>FindAlohaEmployeePunchesByManagerDataSet.xsd</DependentUpon>

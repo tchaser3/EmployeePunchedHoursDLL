@@ -56,6 +56,24 @@ namespace EmployeePunchedHoursDLL
         FindEmployeePunchedHoursForValidationDataSet aFindEmployeePunchedHoursForValidationDataSet;
         FindEmployeePunchedHoursForValidationDataSetTableAdapters.FindEmployeePunchedHoursForValidationTableAdapter aFindEmployeePunchedHoursForValidationTableAdapter;
 
+        FindAlohaEmployeeHoursOverDateRangeDataSet aFindAlohaEmployeeHoursOverDateRangeDataSet;
+        FindAlohaEmployeeHoursOverDateRangeDataSetTableAdapters.FindAlohaEmployeeHoursOverDateRangeTableAdapter aFindAlohaEmployeeHoursOverDateRangeTableAdapter;
+
+        public FindAlohaEmployeeHoursOverDateRangeDataSet FindAlohaEmployeeHoursOverDateRange(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAlohaEmployeeHoursOverDateRangeDataSet = new FindAlohaEmployeeHoursOverDateRangeDataSet();
+                aFindAlohaEmployeeHoursOverDateRangeTableAdapter = new FindAlohaEmployeeHoursOverDateRangeDataSetTableAdapters.FindAlohaEmployeeHoursOverDateRangeTableAdapter();
+                aFindAlohaEmployeeHoursOverDateRangeTableAdapter.Fill(aFindAlohaEmployeeHoursOverDateRangeDataSet.FindAlohaEmployeeHoursOverDateRange, intEmployeeID, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Aloha Employee Hours Over Date Range " + Ex.Message);
+            }
+
+            return aFindAlohaEmployeeHoursOverDateRangeDataSet;
+        }
         public FindEmployeePunchedHoursForValidationDataSet FindEmployeePunchedHoursForValidation(DateTime datTransactionDate, int intEmployeeID, int intPayID)
         {
             try
