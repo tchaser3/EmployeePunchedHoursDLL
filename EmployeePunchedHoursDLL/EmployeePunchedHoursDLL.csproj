@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EmployeePunchedHoursDLL</RootNamespace>
     <AssemblyName>EmployeePunchedHoursDLL</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AholaClockPunchesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AholaClockPunchesDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AlohaEmployeePunchesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -54,6 +60,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindAholaClockPUnchesForEmployeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAholaClockPUnchesForEmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindAholaClockPunchesForVerificationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAholaClockPunchesForVerificationDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FindAholaEmployeePunchForVerificationDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -105,6 +121,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeesOverFortyHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InsertAholaClockPunchesEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertAholaClockPunchesEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertEmployeePunchedHoursEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,8 +147,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RemoveEmplolyeePunchedHoursEntry.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UpdateAlohaTimePunchesEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateAlohaTimePunchesEntry.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AholaClockPunchesDataSet1.xsc">
+      <DependentUpon>AholaClockPunchesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AholaClockPunchesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AholaClockPunchesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AholaClockPunchesDataSet1.xss">
+      <DependentUpon>AholaClockPunchesDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="AlohaEmployeePunchesDataSet.xsc">
       <DependentUpon>AlohaEmployeePunchesDataSet.xsd</DependentUpon>
     </None>
@@ -150,6 +187,28 @@
     </None>
     <None Include="EmployeePunchedHoursDataSet.xss">
       <DependentUpon>EmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaClockPUnchesForEmployeeDataSet.xsc">
+      <DependentUpon>FindAholaClockPUnchesForEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaClockPUnchesForEmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAholaClockPUnchesForEmployeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAholaClockPUnchesForEmployeeDataSet.xss">
+      <DependentUpon>FindAholaClockPUnchesForEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaClockPunchesForVerificationDataSet.xsc">
+      <DependentUpon>FindAholaClockPunchesForVerificationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaClockPunchesForVerificationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAholaClockPunchesForVerificationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAholaClockPunchesForVerificationDataSet.xss">
+      <DependentUpon>FindAholaClockPunchesForVerificationDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindAholaEmployeePunchForVerificationDataSet.xsc">
       <DependentUpon>FindAholaEmployeePunchForVerificationDataSet.xsd</DependentUpon>
@@ -261,6 +320,17 @@
     <None Include="FindEmployeesOverFortyHoursDataSet.xss">
       <DependentUpon>FindEmployeesOverFortyHoursDataSet.xsd</DependentUpon>
     </None>
+    <None Include="InsertAholaClockPunchesEntry.xsc">
+      <DependentUpon>InsertAholaClockPunchesEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertAholaClockPunchesEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertAholaClockPunchesEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertAholaClockPunchesEntry.xss">
+      <DependentUpon>InsertAholaClockPunchesEntry.xsd</DependentUpon>
+    </None>
     <None Include="InsertEmployeePunchedHoursEntry.xsc">
       <DependentUpon>InsertEmployeePunchedHoursEntry.xsd</DependentUpon>
     </None>
@@ -297,6 +367,17 @@
     </None>
     <None Include="RemoveEmplolyeePunchedHoursEntry.xss">
       <DependentUpon>RemoveEmplolyeePunchedHoursEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateAlohaTimePunchesEntry.xsc">
+      <DependentUpon>UpdateAlohaTimePunchesEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateAlohaTimePunchesEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateAlohaTimePunchesEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateAlohaTimePunchesEntry.xss">
+      <DependentUpon>UpdateAlohaTimePunchesEntry.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

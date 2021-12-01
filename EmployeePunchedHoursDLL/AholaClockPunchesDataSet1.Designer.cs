@@ -20,17 +20,17 @@ namespace EmployeePunchedHoursDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindDuplicateEmployeePunchedHoursDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("AholaClockPunchesDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindDuplicateEmployeePunchedHoursDataSet : global::System.Data.DataSet {
+    public partial class AholaClockPunchesDataSet : global::System.Data.DataSet {
         
-        private FindDuplicateEmployeePunchedHoursDataTable tableFindDuplicateEmployeePunchedHours;
+        private aholaclockpunchesDataTable tableaholaclockpunches;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindDuplicateEmployeePunchedHoursDataSet() {
+        public AholaClockPunchesDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace EmployeePunchedHoursDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected FindDuplicateEmployeePunchedHoursDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected AholaClockPunchesDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace EmployeePunchedHoursDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FindDuplicateEmployeePunchedHours"] != null)) {
-                    base.Tables.Add(new FindDuplicateEmployeePunchedHoursDataTable(ds.Tables["FindDuplicateEmployeePunchedHours"]));
+                if ((ds.Tables["aholaclockpunches"] != null)) {
+                    base.Tables.Add(new aholaclockpunchesDataTable(ds.Tables["aholaclockpunches"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace EmployeePunchedHoursDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FindDuplicateEmployeePunchedHoursDataTable FindDuplicateEmployeePunchedHours {
+        public aholaclockpunchesDataTable aholaclockpunches {
             get {
-                return this.tableFindDuplicateEmployeePunchedHours;
+                return this.tableaholaclockpunches;
             }
         }
         
@@ -127,7 +127,7 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindDuplicateEmployeePunchedHoursDataSet cln = ((FindDuplicateEmployeePunchedHoursDataSet)(base.Clone()));
+            AholaClockPunchesDataSet cln = ((AholaClockPunchesDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace EmployeePunchedHoursDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FindDuplicateEmployeePunchedHours"] != null)) {
-                    base.Tables.Add(new FindDuplicateEmployeePunchedHoursDataTable(ds.Tables["FindDuplicateEmployeePunchedHours"]));
+                if ((ds.Tables["aholaclockpunches"] != null)) {
+                    base.Tables.Add(new aholaclockpunchesDataTable(ds.Tables["aholaclockpunches"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFindDuplicateEmployeePunchedHours = ((FindDuplicateEmployeePunchedHoursDataTable)(base.Tables["FindDuplicateEmployeePunchedHours"]));
+            this.tableaholaclockpunches = ((aholaclockpunchesDataTable)(base.Tables["aholaclockpunches"]));
             if ((initTable == true)) {
-                if ((this.tableFindDuplicateEmployeePunchedHours != null)) {
-                    this.tableFindDuplicateEmployeePunchedHours.InitVars();
+                if ((this.tableaholaclockpunches != null)) {
+                    this.tableaholaclockpunches.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindDuplicateEmployeePunchedHoursDataSet";
+            this.DataSetName = "AholaClockPunchesDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindDuplicateEmployeePunchedHoursDataSet.xsd";
+            this.Namespace = "http://tempuri.org/AholaClockPunchesDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFindDuplicateEmployeePunchedHours = new FindDuplicateEmployeePunchedHoursDataTable();
-            base.Tables.Add(this.tableFindDuplicateEmployeePunchedHours);
+            this.tableaholaclockpunches = new aholaclockpunchesDataTable();
+            base.Tables.Add(this.tableaholaclockpunches);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeFindDuplicateEmployeePunchedHours() {
+        private bool ShouldSerializeaholaclockpunches() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindDuplicateEmployeePunchedHoursDataSet ds = new FindDuplicateEmployeePunchedHoursDataSet();
+            AholaClockPunchesDataSet ds = new AholaClockPunchesDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,45 @@ namespace EmployeePunchedHoursDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void FindDuplicateEmployeePunchedHoursRowChangeEventHandler(object sender, FindDuplicateEmployeePunchedHoursRowChangeEvent e);
+        public delegate void aholaclockpunchesRowChangeEventHandler(object sender, aholaclockpunchesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FindDuplicateEmployeePunchedHoursDataTable : global::System.Data.TypedTableBase<FindDuplicateEmployeePunchedHoursRow> {
+        public partial class aholaclockpunchesDataTable : global::System.Data.TypedTableBase<aholaclockpunchesRow> {
+            
+            private global::System.Data.DataColumn columnTransactionID;
             
             private global::System.Data.DataColumn columnEmployeeID;
             
-            private global::System.Data.DataColumn columnFirstName;
+            private global::System.Data.DataColumn columnPayID;
             
-            private global::System.Data.DataColumn columnLastName;
+            private global::System.Data.DataColumn columnActualDateTime;
             
-            private global::System.Data.DataColumn columnPunchedHours;
+            private global::System.Data.DataColumn columnPunchDateTime;
             
-            private global::System.Data.DataColumn columnTransactionDate;
+            private global::System.Data.DataColumn columnCreatedDateTime;
             
-            private global::System.Data.DataColumn columnTimesIN;
+            private global::System.Data.DataColumn columnPayGroup;
+            
+            private global::System.Data.DataColumn columnPunchMode;
+            
+            private global::System.Data.DataColumn columnPunchType;
+            
+            private global::System.Data.DataColumn columnPunchSource;
+            
+            private global::System.Data.DataColumn columnPunchUser;
+            
+            private global::System.Data.DataColumn columnPunchIPAddress;
+            
+            private global::System.Data.DataColumn columnLastUpdate;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursDataTable() {
-                this.TableName = "FindDuplicateEmployeePunchedHours";
+            public aholaclockpunchesDataTable() {
+                this.TableName = "aholaclockpunches";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +316,7 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FindDuplicateEmployeePunchedHoursDataTable(global::System.Data.DataTable table) {
+            internal aholaclockpunchesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,9 +333,17 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected FindDuplicateEmployeePunchedHoursDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected aholaclockpunchesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TransactionIDColumn {
+                get {
+                    return this.columnTransactionID;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -334,41 +356,89 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FirstNameColumn {
+            public global::System.Data.DataColumn PayIDColumn {
                 get {
-                    return this.columnFirstName;
+                    return this.columnPayID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LastNameColumn {
+            public global::System.Data.DataColumn ActualDateTimeColumn {
                 get {
-                    return this.columnLastName;
+                    return this.columnActualDateTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PunchedHoursColumn {
+            public global::System.Data.DataColumn PunchDateTimeColumn {
                 get {
-                    return this.columnPunchedHours;
+                    return this.columnPunchDateTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
+            public global::System.Data.DataColumn CreatedDateTimeColumn {
                 get {
-                    return this.columnTransactionDate;
+                    return this.columnCreatedDateTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TimesINColumn {
+            public global::System.Data.DataColumn PayGroupColumn {
                 get {
-                    return this.columnTimesIN;
+                    return this.columnPayGroup;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchModeColumn {
+                get {
+                    return this.columnPunchMode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchTypeColumn {
+                get {
+                    return this.columnPunchType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchSourceColumn {
+                get {
+                    return this.columnPunchSource;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchUserColumn {
+                get {
+                    return this.columnPunchUser;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchIPAddressColumn {
+                get {
+                    return this.columnPunchIPAddress;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LastUpdateColumn {
+                get {
+                    return this.columnLastUpdate;
                 }
             }
             
@@ -383,50 +453,64 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow this[int index] {
+            public aholaclockpunchesRow this[int index] {
                 get {
-                    return ((FindDuplicateEmployeePunchedHoursRow)(this.Rows[index]));
+                    return ((aholaclockpunchesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowChanging;
+            public event aholaclockpunchesRowChangeEventHandler aholaclockpunchesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowChanged;
+            public event aholaclockpunchesRowChangeEventHandler aholaclockpunchesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowDeleting;
+            public event aholaclockpunchesRowChangeEventHandler aholaclockpunchesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowDeleted;
+            public event aholaclockpunchesRowChangeEventHandler aholaclockpunchesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddFindDuplicateEmployeePunchedHoursRow(FindDuplicateEmployeePunchedHoursRow row) {
+            public void AddaholaclockpunchesRow(aholaclockpunchesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow AddFindDuplicateEmployeePunchedHoursRow(int EmployeeID, string FirstName, string LastName, decimal PunchedHours, System.DateTime TransactionDate, int TimesIN) {
-                FindDuplicateEmployeePunchedHoursRow rowFindDuplicateEmployeePunchedHoursRow = ((FindDuplicateEmployeePunchedHoursRow)(this.NewRow()));
+            public aholaclockpunchesRow AddaholaclockpunchesRow(int EmployeeID, int PayID, System.DateTime ActualDateTime, System.DateTime PunchDateTime, System.DateTime CreatedDateTime, string PayGroup, string PunchMode, string PunchType, string PunchSource, string PunchUser, string PunchIPAddress, System.DateTime LastUpdate) {
+                aholaclockpunchesRow rowaholaclockpunchesRow = ((aholaclockpunchesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        null,
                         EmployeeID,
-                        FirstName,
-                        LastName,
-                        PunchedHours,
-                        TransactionDate,
-                        TimesIN};
-                rowFindDuplicateEmployeePunchedHoursRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFindDuplicateEmployeePunchedHoursRow);
-                return rowFindDuplicateEmployeePunchedHoursRow;
+                        PayID,
+                        ActualDateTime,
+                        PunchDateTime,
+                        CreatedDateTime,
+                        PayGroup,
+                        PunchMode,
+                        PunchType,
+                        PunchSource,
+                        PunchUser,
+                        PunchIPAddress,
+                        LastUpdate};
+                rowaholaclockpunchesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowaholaclockpunchesRow);
+                return rowaholaclockpunchesRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public aholaclockpunchesRow FindByTransactionID(int TransactionID) {
+                return ((aholaclockpunchesRow)(this.Rows.Find(new object[] {
+                            TransactionID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FindDuplicateEmployeePunchedHoursDataTable cln = ((FindDuplicateEmployeePunchedHoursDataTable)(base.Clone()));
+                aholaclockpunchesDataTable cln = ((aholaclockpunchesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -434,69 +518,108 @@ namespace EmployeePunchedHoursDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FindDuplicateEmployeePunchedHoursDataTable();
+                return new aholaclockpunchesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
+                this.columnTransactionID = base.Columns["TransactionID"];
                 this.columnEmployeeID = base.Columns["EmployeeID"];
-                this.columnFirstName = base.Columns["FirstName"];
-                this.columnLastName = base.Columns["LastName"];
-                this.columnPunchedHours = base.Columns["PunchedHours"];
-                this.columnTransactionDate = base.Columns["TransactionDate"];
-                this.columnTimesIN = base.Columns["TimesIN"];
+                this.columnPayID = base.Columns["PayID"];
+                this.columnActualDateTime = base.Columns["ActualDateTime"];
+                this.columnPunchDateTime = base.Columns["PunchDateTime"];
+                this.columnCreatedDateTime = base.Columns["CreatedDateTime"];
+                this.columnPayGroup = base.Columns["PayGroup"];
+                this.columnPunchMode = base.Columns["PunchMode"];
+                this.columnPunchType = base.Columns["PunchType"];
+                this.columnPunchSource = base.Columns["PunchSource"];
+                this.columnPunchUser = base.Columns["PunchUser"];
+                this.columnPunchIPAddress = base.Columns["PunchIPAddress"];
+                this.columnLastUpdate = base.Columns["LastUpdate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
+                this.columnTransactionID = new global::System.Data.DataColumn("TransactionID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransactionID);
                 this.columnEmployeeID = new global::System.Data.DataColumn("EmployeeID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmployeeID);
-                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFirstName);
-                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLastName);
-                this.columnPunchedHours = new global::System.Data.DataColumn("PunchedHours", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPunchedHours);
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
-                this.columnTimesIN = new global::System.Data.DataColumn("TimesIN", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTimesIN);
+                this.columnPayID = new global::System.Data.DataColumn("PayID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayID);
+                this.columnActualDateTime = new global::System.Data.DataColumn("ActualDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnActualDateTime);
+                this.columnPunchDateTime = new global::System.Data.DataColumn("PunchDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchDateTime);
+                this.columnCreatedDateTime = new global::System.Data.DataColumn("CreatedDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreatedDateTime);
+                this.columnPayGroup = new global::System.Data.DataColumn("PayGroup", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayGroup);
+                this.columnPunchMode = new global::System.Data.DataColumn("PunchMode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchMode);
+                this.columnPunchType = new global::System.Data.DataColumn("PunchType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchType);
+                this.columnPunchSource = new global::System.Data.DataColumn("PunchSource", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchSource);
+                this.columnPunchUser = new global::System.Data.DataColumn("PunchUser", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchUser);
+                this.columnPunchIPAddress = new global::System.Data.DataColumn("PunchIPAddress", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchIPAddress);
+                this.columnLastUpdate = new global::System.Data.DataColumn("LastUpdate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastUpdate);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTransactionID}, true));
+                this.columnTransactionID.AutoIncrement = true;
+                this.columnTransactionID.AutoIncrementSeed = -1;
+                this.columnTransactionID.AutoIncrementStep = -1;
+                this.columnTransactionID.AllowDBNull = false;
+                this.columnTransactionID.ReadOnly = true;
+                this.columnTransactionID.Unique = true;
                 this.columnEmployeeID.AllowDBNull = false;
-                this.columnFirstName.AllowDBNull = false;
-                this.columnFirstName.MaxLength = 2147483647;
-                this.columnLastName.AllowDBNull = false;
-                this.columnLastName.MaxLength = 2147483647;
-                this.columnPunchedHours.AllowDBNull = false;
-                this.columnTransactionDate.AllowDBNull = false;
-                this.columnTimesIN.ReadOnly = true;
+                this.columnPayID.AllowDBNull = false;
+                this.columnActualDateTime.AllowDBNull = false;
+                this.columnPunchDateTime.AllowDBNull = false;
+                this.columnCreatedDateTime.AllowDBNull = false;
+                this.columnPayGroup.AllowDBNull = false;
+                this.columnPayGroup.MaxLength = 2147483647;
+                this.columnPunchMode.AllowDBNull = false;
+                this.columnPunchMode.MaxLength = 2147483647;
+                this.columnPunchType.AllowDBNull = false;
+                this.columnPunchType.MaxLength = 2147483647;
+                this.columnPunchSource.AllowDBNull = false;
+                this.columnPunchSource.MaxLength = 2147483647;
+                this.columnPunchUser.AllowDBNull = false;
+                this.columnPunchUser.MaxLength = 2147483647;
+                this.columnPunchIPAddress.AllowDBNull = false;
+                this.columnPunchIPAddress.MaxLength = 2147483647;
+                this.columnLastUpdate.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow NewFindDuplicateEmployeePunchedHoursRow() {
-                return ((FindDuplicateEmployeePunchedHoursRow)(this.NewRow()));
+            public aholaclockpunchesRow NewaholaclockpunchesRow() {
+                return ((aholaclockpunchesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FindDuplicateEmployeePunchedHoursRow(builder);
+                return new aholaclockpunchesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FindDuplicateEmployeePunchedHoursRow);
+                return typeof(aholaclockpunchesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowChanged != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowChanged(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.aholaclockpunchesRowChanged != null)) {
+                    this.aholaclockpunchesRowChanged(this, new aholaclockpunchesRowChangeEvent(((aholaclockpunchesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -504,8 +627,8 @@ namespace EmployeePunchedHoursDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowChanging != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowChanging(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.aholaclockpunchesRowChanging != null)) {
+                    this.aholaclockpunchesRowChanging(this, new aholaclockpunchesRowChangeEvent(((aholaclockpunchesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -513,8 +636,8 @@ namespace EmployeePunchedHoursDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowDeleted != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowDeleted(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.aholaclockpunchesRowDeleted != null)) {
+                    this.aholaclockpunchesRowDeleted(this, new aholaclockpunchesRowChangeEvent(((aholaclockpunchesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -522,14 +645,14 @@ namespace EmployeePunchedHoursDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowDeleting != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowDeleting(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.aholaclockpunchesRowDeleting != null)) {
+                    this.aholaclockpunchesRowDeleting(this, new aholaclockpunchesRowChangeEvent(((aholaclockpunchesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveFindDuplicateEmployeePunchedHoursRow(FindDuplicateEmployeePunchedHoursRow row) {
+            public void RemoveaholaclockpunchesRow(aholaclockpunchesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -538,7 +661,7 @@ namespace EmployeePunchedHoursDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindDuplicateEmployeePunchedHoursDataSet ds = new FindDuplicateEmployeePunchedHoursDataSet();
+                AholaClockPunchesDataSet ds = new AholaClockPunchesDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -556,7 +679,7 @@ namespace EmployeePunchedHoursDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FindDuplicateEmployeePunchedHoursDataTable";
+                attribute2.FixedValue = "aholaclockpunchesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -600,99 +723,158 @@ namespace EmployeePunchedHoursDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FindDuplicateEmployeePunchedHoursRow : global::System.Data.DataRow {
+        public partial class aholaclockpunchesRow : global::System.Data.DataRow {
             
-            private FindDuplicateEmployeePunchedHoursDataTable tableFindDuplicateEmployeePunchedHours;
+            private aholaclockpunchesDataTable tableaholaclockpunches;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FindDuplicateEmployeePunchedHoursRow(global::System.Data.DataRowBuilder rb) : 
+            internal aholaclockpunchesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFindDuplicateEmployeePunchedHours = ((FindDuplicateEmployeePunchedHoursDataTable)(this.Table));
+                this.tableaholaclockpunches = ((aholaclockpunchesDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TransactionID {
+                get {
+                    return ((int)(this[this.tableaholaclockpunches.TransactionIDColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.TransactionIDColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int EmployeeID {
                 get {
-                    return ((int)(this[this.tableFindDuplicateEmployeePunchedHours.EmployeeIDColumn]));
+                    return ((int)(this[this.tableaholaclockpunches.EmployeeIDColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.EmployeeIDColumn] = value;
+                    this[this.tableaholaclockpunches.EmployeeIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FirstName {
+            public int PayID {
                 get {
-                    return ((string)(this[this.tableFindDuplicateEmployeePunchedHours.FirstNameColumn]));
+                    return ((int)(this[this.tableaholaclockpunches.PayIDColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.FirstNameColumn] = value;
+                    this[this.tableaholaclockpunches.PayIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string LastName {
+            public System.DateTime ActualDateTime {
                 get {
-                    return ((string)(this[this.tableFindDuplicateEmployeePunchedHours.LastNameColumn]));
+                    return ((global::System.DateTime)(this[this.tableaholaclockpunches.ActualDateTimeColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.LastNameColumn] = value;
+                    this[this.tableaholaclockpunches.ActualDateTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal PunchedHours {
+            public System.DateTime PunchDateTime {
                 get {
-                    return ((decimal)(this[this.tableFindDuplicateEmployeePunchedHours.PunchedHoursColumn]));
+                    return ((global::System.DateTime)(this[this.tableaholaclockpunches.PunchDateTimeColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.PunchedHoursColumn] = value;
+                    this[this.tableaholaclockpunches.PunchDateTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime TransactionDate {
+            public System.DateTime CreatedDateTime {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFindDuplicateEmployeePunchedHours.TransactionDateColumn]));
+                    return ((global::System.DateTime)(this[this.tableaholaclockpunches.CreatedDateTimeColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.TransactionDateColumn] = value;
+                    this[this.tableaholaclockpunches.CreatedDateTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TimesIN {
+            public string PayGroup {
                 get {
-                    try {
-                        return ((int)(this[this.tableFindDuplicateEmployeePunchedHours.TimesINColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TimesIN\' in table \'FindDuplicateEmployeePunchedHours\' is DB" +
-                                "Null.", e);
-                    }
+                    return ((string)(this[this.tableaholaclockpunches.PayGroupColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.TimesINColumn] = value;
+                    this[this.tableaholaclockpunches.PayGroupColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTimesINNull() {
-                return this.IsNull(this.tableFindDuplicateEmployeePunchedHours.TimesINColumn);
+            public string PunchMode {
+                get {
+                    return ((string)(this[this.tableaholaclockpunches.PunchModeColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.PunchModeColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTimesINNull() {
-                this[this.tableFindDuplicateEmployeePunchedHours.TimesINColumn] = global::System.Convert.DBNull;
+            public string PunchType {
+                get {
+                    return ((string)(this[this.tableaholaclockpunches.PunchTypeColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.PunchTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PunchSource {
+                get {
+                    return ((string)(this[this.tableaholaclockpunches.PunchSourceColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.PunchSourceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PunchUser {
+                get {
+                    return ((string)(this[this.tableaholaclockpunches.PunchUserColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.PunchUserColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PunchIPAddress {
+                get {
+                    return ((string)(this[this.tableaholaclockpunches.PunchIPAddressColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.PunchIPAddressColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime LastUpdate {
+                get {
+                    return ((global::System.DateTime)(this[this.tableaholaclockpunches.LastUpdateColumn]));
+                }
+                set {
+                    this[this.tableaholaclockpunches.LastUpdateColumn] = value;
+                }
             }
         }
         
@@ -700,22 +882,22 @@ namespace EmployeePunchedHoursDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class FindDuplicateEmployeePunchedHoursRowChangeEvent : global::System.EventArgs {
+        public class aholaclockpunchesRowChangeEvent : global::System.EventArgs {
             
-            private FindDuplicateEmployeePunchedHoursRow eventRow;
+            private aholaclockpunchesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRowChangeEvent(FindDuplicateEmployeePunchedHoursRow row, global::System.Data.DataRowAction action) {
+            public aholaclockpunchesRowChangeEvent(aholaclockpunchesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow Row {
+            public aholaclockpunchesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -731,7 +913,7 @@ namespace EmployeePunchedHoursDLL {
         }
     }
 }
-namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableAdapters {
+namespace EmployeePunchedHoursDLL.AholaClockPunchesDataSetTableAdapters {
     
     
     /// <summary>
@@ -743,7 +925,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class FindDuplicateEmployeePunchedHoursTableAdapter : global::System.ComponentModel.Component {
+    public partial class aholaclockpunchesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -757,7 +939,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindDuplicateEmployeePunchedHoursTableAdapter() {
+        public aholaclockpunchesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -854,14 +1036,74 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "FindDuplicateEmployeePunchedHours";
+            tableMapping.DataSetTable = "aholaclockpunches";
+            tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
             tableMapping.ColumnMappings.Add("EmployeeID", "EmployeeID");
-            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
-            tableMapping.ColumnMappings.Add("LastName", "LastName");
-            tableMapping.ColumnMappings.Add("PunchedHours", "PunchedHours");
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
-            tableMapping.ColumnMappings.Add("TimesIN", "TimesIN");
+            tableMapping.ColumnMappings.Add("PayID", "PayID");
+            tableMapping.ColumnMappings.Add("ActualDateTime", "ActualDateTime");
+            tableMapping.ColumnMappings.Add("PunchDateTime", "PunchDateTime");
+            tableMapping.ColumnMappings.Add("CreatedDateTime", "CreatedDateTime");
+            tableMapping.ColumnMappings.Add("PayGroup", "PayGroup");
+            tableMapping.ColumnMappings.Add("PunchMode", "PunchMode");
+            tableMapping.ColumnMappings.Add("PunchType", "PunchType");
+            tableMapping.ColumnMappings.Add("PunchSource", "PunchSource");
+            tableMapping.ColumnMappings.Add("PunchUser", "PunchUser");
+            tableMapping.ColumnMappings.Add("PunchIPAddress", "PunchIPAddress");
+            tableMapping.ColumnMappings.Add("LastUpdate", "LastUpdate");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[aholaclockpunches] WHERE (([TransactionID] = @Original_TransactionID) AND ([EmployeeID] = @Original_EmployeeID) AND ([PayID] = @Original_PayID) AND ([ActualDateTime] = @Original_ActualDateTime) AND ([PunchDateTime] = @Original_PunchDateTime) AND ([CreatedDateTime] = @Original_CreatedDateTime) AND ([LastUpdate] = @Original_LastUpdate))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PayID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ActualDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ActualDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PunchDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CreatedDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LastUpdate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastUpdate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[aholaclockpunches] ([EmployeeID], [PayID], [ActualDateTime], [PunchDateTime], [CreatedDateTime], [PayGroup], [PunchMode], [PunchType], [PunchSource], [PunchUser], [PunchIPAddress], [LastUpdate]) VALUES (@EmployeeID, @PayID, @ActualDateTime, @PunchDateTime, @CreatedDateTime, @PayGroup, @PunchMode, @PunchType, @PunchSource, @PunchUser, @PunchIPAddress, @LastUpdate);
+SELECT TransactionID, EmployeeID, PayID, ActualDateTime, PunchDateTime, CreatedDateTime, PayGroup, PunchMode, PunchType, PunchSource, PunchUser, PunchIPAddress, LastUpdate FROM aholaclockpunches WHERE (TransactionID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ActualDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ActualDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayGroup", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayGroup", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchMode", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchMode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchType", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchSource", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchSource", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchUser", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchIPAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchIPAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastUpdate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastUpdate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[aholaclockpunches] SET [EmployeeID] = @EmployeeID, [PayID] = @PayID, [ActualDateTime] = @ActualDateTime, [PunchDateTime] = @PunchDateTime, [CreatedDateTime] = @CreatedDateTime, [PayGroup] = @PayGroup, [PunchMode] = @PunchMode, [PunchType] = @PunchType, [PunchSource] = @PunchSource, [PunchUser] = @PunchUser, [PunchIPAddress] = @PunchIPAddress, [LastUpdate] = @LastUpdate WHERE (([TransactionID] = @Original_TransactionID) AND ([EmployeeID] = @Original_EmployeeID) AND ([PayID] = @Original_PayID) AND ([ActualDateTime] = @Original_ActualDateTime) AND ([PunchDateTime] = @Original_PunchDateTime) AND ([CreatedDateTime] = @Original_CreatedDateTime) AND ([LastUpdate] = @Original_LastUpdate));
+SELECT TransactionID, EmployeeID, PayID, ActualDateTime, PunchDateTime, CreatedDateTime, PayGroup, PunchMode, PunchType, PunchSource, PunchUser, PunchIPAddress, LastUpdate FROM aholaclockpunches WHERE (TransactionID = @TransactionID)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ActualDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ActualDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayGroup", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayGroup", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchMode", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchMode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchType", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchSource", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchSource", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchUser", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchIPAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchIPAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastUpdate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastUpdate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PayID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ActualDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ActualDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PunchDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PunchDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CreatedDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LastUpdate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastUpdate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -877,24 +1119,18 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.FindDuplicateEmployeePunchedHours";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].CommandText = "SELECT TransactionID, EmployeeID, PayID, ActualDateTime, PunchDateTime, CreatedDa" +
+                "teTime, PayGroup, PunchMode, PunchType, PunchSource, PunchUser, PunchIPAddress, " +
+                "LastUpdate FROM dbo.aholaclockpunches";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable dataTable, global::System.Nullable<global::System.DateTime> TransactionDate) {
+        public virtual int Fill(AholaClockPunchesDataSet.aholaclockpunchesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((TransactionDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(TransactionDate.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -906,17 +1142,249 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable GetData(global::System.Nullable<global::System.DateTime> TransactionDate) {
+        public virtual AholaClockPunchesDataSet.aholaclockpunchesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((TransactionDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(TransactionDate.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable dataTable = new FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable();
+            AholaClockPunchesDataSet.aholaclockpunchesDataTable dataTable = new AholaClockPunchesDataSet.aholaclockpunchesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(AholaClockPunchesDataSet.aholaclockpunchesDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(AholaClockPunchesDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "aholaclockpunches");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_TransactionID, int Original_EmployeeID, int Original_PayID, System.DateTime Original_ActualDateTime, System.DateTime Original_PunchDateTime, System.DateTime Original_CreatedDateTime, System.DateTime Original_LastUpdate) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TransactionID));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_EmployeeID));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_PayID));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_ActualDateTime));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_PunchDateTime));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((System.DateTime)(Original_CreatedDateTime));
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_LastUpdate));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int EmployeeID, int PayID, System.DateTime ActualDateTime, System.DateTime PunchDateTime, System.DateTime CreatedDateTime, string PayGroup, string PunchMode, string PunchType, string PunchSource, string PunchUser, string PunchIPAddress, System.DateTime LastUpdate) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(EmployeeID));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(PayID));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(ActualDateTime));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(PunchDateTime));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(CreatedDateTime));
+            if ((PayGroup == null)) {
+                throw new global::System.ArgumentNullException("PayGroup");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(PayGroup));
+            }
+            if ((PunchMode == null)) {
+                throw new global::System.ArgumentNullException("PunchMode");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(PunchMode));
+            }
+            if ((PunchType == null)) {
+                throw new global::System.ArgumentNullException("PunchType");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(PunchType));
+            }
+            if ((PunchSource == null)) {
+                throw new global::System.ArgumentNullException("PunchSource");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(PunchSource));
+            }
+            if ((PunchUser == null)) {
+                throw new global::System.ArgumentNullException("PunchUser");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(PunchUser));
+            }
+            if ((PunchIPAddress == null)) {
+                throw new global::System.ArgumentNullException("PunchIPAddress");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(PunchIPAddress));
+            }
+            this.Adapter.InsertCommand.Parameters[11].Value = ((System.DateTime)(LastUpdate));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int EmployeeID, 
+                    int PayID, 
+                    System.DateTime ActualDateTime, 
+                    System.DateTime PunchDateTime, 
+                    System.DateTime CreatedDateTime, 
+                    string PayGroup, 
+                    string PunchMode, 
+                    string PunchType, 
+                    string PunchSource, 
+                    string PunchUser, 
+                    string PunchIPAddress, 
+                    System.DateTime LastUpdate, 
+                    int Original_TransactionID, 
+                    int Original_EmployeeID, 
+                    int Original_PayID, 
+                    System.DateTime Original_ActualDateTime, 
+                    System.DateTime Original_PunchDateTime, 
+                    System.DateTime Original_CreatedDateTime, 
+                    System.DateTime Original_LastUpdate, 
+                    int TransactionID) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(EmployeeID));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(PayID));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(ActualDateTime));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(PunchDateTime));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(CreatedDateTime));
+            if ((PayGroup == null)) {
+                throw new global::System.ArgumentNullException("PayGroup");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(PayGroup));
+            }
+            if ((PunchMode == null)) {
+                throw new global::System.ArgumentNullException("PunchMode");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(PunchMode));
+            }
+            if ((PunchType == null)) {
+                throw new global::System.ArgumentNullException("PunchType");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(PunchType));
+            }
+            if ((PunchSource == null)) {
+                throw new global::System.ArgumentNullException("PunchSource");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(PunchSource));
+            }
+            if ((PunchUser == null)) {
+                throw new global::System.ArgumentNullException("PunchUser");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(PunchUser));
+            }
+            if ((PunchIPAddress == null)) {
+                throw new global::System.ArgumentNullException("PunchIPAddress");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(PunchIPAddress));
+            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(LastUpdate));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_TransactionID));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_EmployeeID));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_PayID));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((System.DateTime)(Original_ActualDateTime));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_PunchDateTime));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((System.DateTime)(Original_CreatedDateTime));
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((System.DateTime)(Original_LastUpdate));
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(TransactionID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int EmployeeID, 
+                    int PayID, 
+                    System.DateTime ActualDateTime, 
+                    System.DateTime PunchDateTime, 
+                    System.DateTime CreatedDateTime, 
+                    string PayGroup, 
+                    string PunchMode, 
+                    string PunchType, 
+                    string PunchSource, 
+                    string PunchUser, 
+                    string PunchIPAddress, 
+                    System.DateTime LastUpdate, 
+                    int Original_TransactionID, 
+                    int Original_EmployeeID, 
+                    int Original_PayID, 
+                    System.DateTime Original_ActualDateTime, 
+                    System.DateTime Original_PunchDateTime, 
+                    System.DateTime Original_CreatedDateTime, 
+                    System.DateTime Original_LastUpdate) {
+            return this.Update(EmployeeID, PayID, ActualDateTime, PunchDateTime, CreatedDateTime, PayGroup, PunchMode, PunchType, PunchSource, PunchUser, PunchIPAddress, LastUpdate, Original_TransactionID, Original_EmployeeID, Original_PayID, Original_ActualDateTime, Original_PunchDateTime, Original_CreatedDateTime, Original_LastUpdate, Original_TransactionID);
         }
     }
     
@@ -932,6 +1400,8 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         
         private UpdateOrderOption _updateOrder;
         
+        private aholaclockpunchesTableAdapter _aholaclockpunchesTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -944,6 +1414,20 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public aholaclockpunchesTableAdapter aholaclockpunchesTableAdapter {
+            get {
+                return this._aholaclockpunchesTableAdapter;
+            }
+            set {
+                this._aholaclockpunchesTableAdapter = value;
             }
         }
         
@@ -966,6 +1450,10 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._aholaclockpunchesTableAdapter != null) 
+                            && (this._aholaclockpunchesTableAdapter.Connection != null))) {
+                    return this._aholaclockpunchesTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -979,6 +1467,9 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._aholaclockpunchesTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -988,8 +1479,17 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(FindDuplicateEmployeePunchedHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(AholaClockPunchesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._aholaclockpunchesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.aholaclockpunches.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._aholaclockpunchesTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -998,8 +1498,16 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(FindDuplicateEmployeePunchedHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(AholaClockPunchesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._aholaclockpunchesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.aholaclockpunches.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._aholaclockpunchesTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -1008,8 +1516,16 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(FindDuplicateEmployeePunchedHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(AholaClockPunchesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._aholaclockpunchesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.aholaclockpunches.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._aholaclockpunchesTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -1042,12 +1558,17 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(FindDuplicateEmployeePunchedHoursDataSet dataSet) {
+        public virtual int UpdateAll(AholaClockPunchesDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._aholaclockpunchesTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._aholaclockpunchesTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1081,6 +1602,15 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._aholaclockpunchesTableAdapter != null)) {
+                    revertConnections.Add(this._aholaclockpunchesTableAdapter, this._aholaclockpunchesTableAdapter.Connection);
+                    this._aholaclockpunchesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._aholaclockpunchesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._aholaclockpunchesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._aholaclockpunchesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._aholaclockpunchesTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1138,6 +1668,10 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._aholaclockpunchesTableAdapter != null)) {
+                    this._aholaclockpunchesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._aholaclockpunchesTableAdapter]));
+                    this._aholaclockpunchesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

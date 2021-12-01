@@ -20,17 +20,17 @@ namespace EmployeePunchedHoursDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindDuplicateEmployeePunchedHoursDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindAholaClockPunchesForVerificationDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindDuplicateEmployeePunchedHoursDataSet : global::System.Data.DataSet {
+    public partial class FindAholaClockPunchesForVerificationDataSet : global::System.Data.DataSet {
         
-        private FindDuplicateEmployeePunchedHoursDataTable tableFindDuplicateEmployeePunchedHours;
+        private FindAholaClockPunchesForVerificationDataTable tableFindAholaClockPunchesForVerification;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindDuplicateEmployeePunchedHoursDataSet() {
+        public FindAholaClockPunchesForVerificationDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace EmployeePunchedHoursDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected FindDuplicateEmployeePunchedHoursDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindAholaClockPunchesForVerificationDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace EmployeePunchedHoursDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FindDuplicateEmployeePunchedHours"] != null)) {
-                    base.Tables.Add(new FindDuplicateEmployeePunchedHoursDataTable(ds.Tables["FindDuplicateEmployeePunchedHours"]));
+                if ((ds.Tables["FindAholaClockPunchesForVerification"] != null)) {
+                    base.Tables.Add(new FindAholaClockPunchesForVerificationDataTable(ds.Tables["FindAholaClockPunchesForVerification"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace EmployeePunchedHoursDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FindDuplicateEmployeePunchedHoursDataTable FindDuplicateEmployeePunchedHours {
+        public FindAholaClockPunchesForVerificationDataTable FindAholaClockPunchesForVerification {
             get {
-                return this.tableFindDuplicateEmployeePunchedHours;
+                return this.tableFindAholaClockPunchesForVerification;
             }
         }
         
@@ -127,7 +127,7 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindDuplicateEmployeePunchedHoursDataSet cln = ((FindDuplicateEmployeePunchedHoursDataSet)(base.Clone()));
+            FindAholaClockPunchesForVerificationDataSet cln = ((FindAholaClockPunchesForVerificationDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace EmployeePunchedHoursDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FindDuplicateEmployeePunchedHours"] != null)) {
-                    base.Tables.Add(new FindDuplicateEmployeePunchedHoursDataTable(ds.Tables["FindDuplicateEmployeePunchedHours"]));
+                if ((ds.Tables["FindAholaClockPunchesForVerification"] != null)) {
+                    base.Tables.Add(new FindAholaClockPunchesForVerificationDataTable(ds.Tables["FindAholaClockPunchesForVerification"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFindDuplicateEmployeePunchedHours = ((FindDuplicateEmployeePunchedHoursDataTable)(base.Tables["FindDuplicateEmployeePunchedHours"]));
+            this.tableFindAholaClockPunchesForVerification = ((FindAholaClockPunchesForVerificationDataTable)(base.Tables["FindAholaClockPunchesForVerification"]));
             if ((initTable == true)) {
-                if ((this.tableFindDuplicateEmployeePunchedHours != null)) {
-                    this.tableFindDuplicateEmployeePunchedHours.InitVars();
+                if ((this.tableFindAholaClockPunchesForVerification != null)) {
+                    this.tableFindAholaClockPunchesForVerification.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindDuplicateEmployeePunchedHoursDataSet";
+            this.DataSetName = "FindAholaClockPunchesForVerificationDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindDuplicateEmployeePunchedHoursDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindAholaClockPunchesForVerificationDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFindDuplicateEmployeePunchedHours = new FindDuplicateEmployeePunchedHoursDataTable();
-            base.Tables.Add(this.tableFindDuplicateEmployeePunchedHours);
+            this.tableFindAholaClockPunchesForVerification = new FindAholaClockPunchesForVerificationDataTable();
+            base.Tables.Add(this.tableFindAholaClockPunchesForVerification);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeFindDuplicateEmployeePunchedHours() {
+        private bool ShouldSerializeFindAholaClockPunchesForVerification() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindDuplicateEmployeePunchedHoursDataSet ds = new FindDuplicateEmployeePunchedHoursDataSet();
+            FindAholaClockPunchesForVerificationDataSet ds = new FindAholaClockPunchesForVerificationDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,45 @@ namespace EmployeePunchedHoursDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void FindDuplicateEmployeePunchedHoursRowChangeEventHandler(object sender, FindDuplicateEmployeePunchedHoursRowChangeEvent e);
+        public delegate void FindAholaClockPunchesForVerificationRowChangeEventHandler(object sender, FindAholaClockPunchesForVerificationRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FindDuplicateEmployeePunchedHoursDataTable : global::System.Data.TypedTableBase<FindDuplicateEmployeePunchedHoursRow> {
+        public partial class FindAholaClockPunchesForVerificationDataTable : global::System.Data.TypedTableBase<FindAholaClockPunchesForVerificationRow> {
+            
+            private global::System.Data.DataColumn columnTransactionID;
             
             private global::System.Data.DataColumn columnEmployeeID;
             
-            private global::System.Data.DataColumn columnFirstName;
+            private global::System.Data.DataColumn columnPayID;
             
-            private global::System.Data.DataColumn columnLastName;
+            private global::System.Data.DataColumn columnActualDateTime;
             
-            private global::System.Data.DataColumn columnPunchedHours;
+            private global::System.Data.DataColumn columnPunchDateTime;
             
-            private global::System.Data.DataColumn columnTransactionDate;
+            private global::System.Data.DataColumn columnCreatedDateTime;
             
-            private global::System.Data.DataColumn columnTimesIN;
+            private global::System.Data.DataColumn columnPayGroup;
+            
+            private global::System.Data.DataColumn columnPunchMode;
+            
+            private global::System.Data.DataColumn columnPunchType;
+            
+            private global::System.Data.DataColumn columnPunchSource;
+            
+            private global::System.Data.DataColumn columnPunchUser;
+            
+            private global::System.Data.DataColumn columnPunchIPAddress;
+            
+            private global::System.Data.DataColumn columnLastUpdate;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursDataTable() {
-                this.TableName = "FindDuplicateEmployeePunchedHours";
+            public FindAholaClockPunchesForVerificationDataTable() {
+                this.TableName = "FindAholaClockPunchesForVerification";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +316,7 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FindDuplicateEmployeePunchedHoursDataTable(global::System.Data.DataTable table) {
+            internal FindAholaClockPunchesForVerificationDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,9 +333,17 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected FindDuplicateEmployeePunchedHoursDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FindAholaClockPunchesForVerificationDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TransactionIDColumn {
+                get {
+                    return this.columnTransactionID;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -334,41 +356,89 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FirstNameColumn {
+            public global::System.Data.DataColumn PayIDColumn {
                 get {
-                    return this.columnFirstName;
+                    return this.columnPayID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LastNameColumn {
+            public global::System.Data.DataColumn ActualDateTimeColumn {
                 get {
-                    return this.columnLastName;
+                    return this.columnActualDateTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PunchedHoursColumn {
+            public global::System.Data.DataColumn PunchDateTimeColumn {
                 get {
-                    return this.columnPunchedHours;
+                    return this.columnPunchDateTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
+            public global::System.Data.DataColumn CreatedDateTimeColumn {
                 get {
-                    return this.columnTransactionDate;
+                    return this.columnCreatedDateTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TimesINColumn {
+            public global::System.Data.DataColumn PayGroupColumn {
                 get {
-                    return this.columnTimesIN;
+                    return this.columnPayGroup;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchModeColumn {
+                get {
+                    return this.columnPunchMode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchTypeColumn {
+                get {
+                    return this.columnPunchType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchSourceColumn {
+                get {
+                    return this.columnPunchSource;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchUserColumn {
+                get {
+                    return this.columnPunchUser;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PunchIPAddressColumn {
+                get {
+                    return this.columnPunchIPAddress;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LastUpdateColumn {
+                get {
+                    return this.columnLastUpdate;
                 }
             }
             
@@ -383,50 +453,64 @@ namespace EmployeePunchedHoursDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow this[int index] {
+            public FindAholaClockPunchesForVerificationRow this[int index] {
                 get {
-                    return ((FindDuplicateEmployeePunchedHoursRow)(this.Rows[index]));
+                    return ((FindAholaClockPunchesForVerificationRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowChanging;
+            public event FindAholaClockPunchesForVerificationRowChangeEventHandler FindAholaClockPunchesForVerificationRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowChanged;
+            public event FindAholaClockPunchesForVerificationRowChangeEventHandler FindAholaClockPunchesForVerificationRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowDeleting;
+            public event FindAholaClockPunchesForVerificationRowChangeEventHandler FindAholaClockPunchesForVerificationRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindDuplicateEmployeePunchedHoursRowChangeEventHandler FindDuplicateEmployeePunchedHoursRowDeleted;
+            public event FindAholaClockPunchesForVerificationRowChangeEventHandler FindAholaClockPunchesForVerificationRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddFindDuplicateEmployeePunchedHoursRow(FindDuplicateEmployeePunchedHoursRow row) {
+            public void AddFindAholaClockPunchesForVerificationRow(FindAholaClockPunchesForVerificationRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow AddFindDuplicateEmployeePunchedHoursRow(int EmployeeID, string FirstName, string LastName, decimal PunchedHours, System.DateTime TransactionDate, int TimesIN) {
-                FindDuplicateEmployeePunchedHoursRow rowFindDuplicateEmployeePunchedHoursRow = ((FindDuplicateEmployeePunchedHoursRow)(this.NewRow()));
+            public FindAholaClockPunchesForVerificationRow AddFindAholaClockPunchesForVerificationRow(int EmployeeID, int PayID, System.DateTime ActualDateTime, System.DateTime PunchDateTime, System.DateTime CreatedDateTime, string PayGroup, string PunchMode, string PunchType, string PunchSource, string PunchUser, string PunchIPAddress, System.DateTime LastUpdate) {
+                FindAholaClockPunchesForVerificationRow rowFindAholaClockPunchesForVerificationRow = ((FindAholaClockPunchesForVerificationRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        null,
                         EmployeeID,
-                        FirstName,
-                        LastName,
-                        PunchedHours,
-                        TransactionDate,
-                        TimesIN};
-                rowFindDuplicateEmployeePunchedHoursRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFindDuplicateEmployeePunchedHoursRow);
-                return rowFindDuplicateEmployeePunchedHoursRow;
+                        PayID,
+                        ActualDateTime,
+                        PunchDateTime,
+                        CreatedDateTime,
+                        PayGroup,
+                        PunchMode,
+                        PunchType,
+                        PunchSource,
+                        PunchUser,
+                        PunchIPAddress,
+                        LastUpdate};
+                rowFindAholaClockPunchesForVerificationRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFindAholaClockPunchesForVerificationRow);
+                return rowFindAholaClockPunchesForVerificationRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public FindAholaClockPunchesForVerificationRow FindByTransactionID(int TransactionID) {
+                return ((FindAholaClockPunchesForVerificationRow)(this.Rows.Find(new object[] {
+                            TransactionID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FindDuplicateEmployeePunchedHoursDataTable cln = ((FindDuplicateEmployeePunchedHoursDataTable)(base.Clone()));
+                FindAholaClockPunchesForVerificationDataTable cln = ((FindAholaClockPunchesForVerificationDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -434,69 +518,106 @@ namespace EmployeePunchedHoursDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FindDuplicateEmployeePunchedHoursDataTable();
+                return new FindAholaClockPunchesForVerificationDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
+                this.columnTransactionID = base.Columns["TransactionID"];
                 this.columnEmployeeID = base.Columns["EmployeeID"];
-                this.columnFirstName = base.Columns["FirstName"];
-                this.columnLastName = base.Columns["LastName"];
-                this.columnPunchedHours = base.Columns["PunchedHours"];
-                this.columnTransactionDate = base.Columns["TransactionDate"];
-                this.columnTimesIN = base.Columns["TimesIN"];
+                this.columnPayID = base.Columns["PayID"];
+                this.columnActualDateTime = base.Columns["ActualDateTime"];
+                this.columnPunchDateTime = base.Columns["PunchDateTime"];
+                this.columnCreatedDateTime = base.Columns["CreatedDateTime"];
+                this.columnPayGroup = base.Columns["PayGroup"];
+                this.columnPunchMode = base.Columns["PunchMode"];
+                this.columnPunchType = base.Columns["PunchType"];
+                this.columnPunchSource = base.Columns["PunchSource"];
+                this.columnPunchUser = base.Columns["PunchUser"];
+                this.columnPunchIPAddress = base.Columns["PunchIPAddress"];
+                this.columnLastUpdate = base.Columns["LastUpdate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
+                this.columnTransactionID = new global::System.Data.DataColumn("TransactionID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransactionID);
                 this.columnEmployeeID = new global::System.Data.DataColumn("EmployeeID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmployeeID);
-                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFirstName);
-                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLastName);
-                this.columnPunchedHours = new global::System.Data.DataColumn("PunchedHours", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPunchedHours);
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
-                this.columnTimesIN = new global::System.Data.DataColumn("TimesIN", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTimesIN);
+                this.columnPayID = new global::System.Data.DataColumn("PayID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayID);
+                this.columnActualDateTime = new global::System.Data.DataColumn("ActualDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnActualDateTime);
+                this.columnPunchDateTime = new global::System.Data.DataColumn("PunchDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchDateTime);
+                this.columnCreatedDateTime = new global::System.Data.DataColumn("CreatedDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreatedDateTime);
+                this.columnPayGroup = new global::System.Data.DataColumn("PayGroup", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayGroup);
+                this.columnPunchMode = new global::System.Data.DataColumn("PunchMode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchMode);
+                this.columnPunchType = new global::System.Data.DataColumn("PunchType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchType);
+                this.columnPunchSource = new global::System.Data.DataColumn("PunchSource", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchSource);
+                this.columnPunchUser = new global::System.Data.DataColumn("PunchUser", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchUser);
+                this.columnPunchIPAddress = new global::System.Data.DataColumn("PunchIPAddress", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPunchIPAddress);
+                this.columnLastUpdate = new global::System.Data.DataColumn("LastUpdate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastUpdate);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTransactionID}, true));
+                this.columnTransactionID.AutoIncrement = true;
+                this.columnTransactionID.AllowDBNull = false;
+                this.columnTransactionID.ReadOnly = true;
+                this.columnTransactionID.Unique = true;
                 this.columnEmployeeID.AllowDBNull = false;
-                this.columnFirstName.AllowDBNull = false;
-                this.columnFirstName.MaxLength = 2147483647;
-                this.columnLastName.AllowDBNull = false;
-                this.columnLastName.MaxLength = 2147483647;
-                this.columnPunchedHours.AllowDBNull = false;
-                this.columnTransactionDate.AllowDBNull = false;
-                this.columnTimesIN.ReadOnly = true;
+                this.columnPayID.AllowDBNull = false;
+                this.columnActualDateTime.AllowDBNull = false;
+                this.columnPunchDateTime.AllowDBNull = false;
+                this.columnCreatedDateTime.AllowDBNull = false;
+                this.columnPayGroup.AllowDBNull = false;
+                this.columnPayGroup.MaxLength = 2147483647;
+                this.columnPunchMode.AllowDBNull = false;
+                this.columnPunchMode.MaxLength = 2147483647;
+                this.columnPunchType.AllowDBNull = false;
+                this.columnPunchType.MaxLength = 2147483647;
+                this.columnPunchSource.AllowDBNull = false;
+                this.columnPunchSource.MaxLength = 2147483647;
+                this.columnPunchUser.AllowDBNull = false;
+                this.columnPunchUser.MaxLength = 2147483647;
+                this.columnPunchIPAddress.AllowDBNull = false;
+                this.columnPunchIPAddress.MaxLength = 2147483647;
+                this.columnLastUpdate.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow NewFindDuplicateEmployeePunchedHoursRow() {
-                return ((FindDuplicateEmployeePunchedHoursRow)(this.NewRow()));
+            public FindAholaClockPunchesForVerificationRow NewFindAholaClockPunchesForVerificationRow() {
+                return ((FindAholaClockPunchesForVerificationRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FindDuplicateEmployeePunchedHoursRow(builder);
+                return new FindAholaClockPunchesForVerificationRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FindDuplicateEmployeePunchedHoursRow);
+                return typeof(FindAholaClockPunchesForVerificationRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowChanged != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowChanged(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.FindAholaClockPunchesForVerificationRowChanged != null)) {
+                    this.FindAholaClockPunchesForVerificationRowChanged(this, new FindAholaClockPunchesForVerificationRowChangeEvent(((FindAholaClockPunchesForVerificationRow)(e.Row)), e.Action));
                 }
             }
             
@@ -504,8 +625,8 @@ namespace EmployeePunchedHoursDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowChanging != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowChanging(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.FindAholaClockPunchesForVerificationRowChanging != null)) {
+                    this.FindAholaClockPunchesForVerificationRowChanging(this, new FindAholaClockPunchesForVerificationRowChangeEvent(((FindAholaClockPunchesForVerificationRow)(e.Row)), e.Action));
                 }
             }
             
@@ -513,8 +634,8 @@ namespace EmployeePunchedHoursDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowDeleted != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowDeleted(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.FindAholaClockPunchesForVerificationRowDeleted != null)) {
+                    this.FindAholaClockPunchesForVerificationRowDeleted(this, new FindAholaClockPunchesForVerificationRowChangeEvent(((FindAholaClockPunchesForVerificationRow)(e.Row)), e.Action));
                 }
             }
             
@@ -522,14 +643,14 @@ namespace EmployeePunchedHoursDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FindDuplicateEmployeePunchedHoursRowDeleting != null)) {
-                    this.FindDuplicateEmployeePunchedHoursRowDeleting(this, new FindDuplicateEmployeePunchedHoursRowChangeEvent(((FindDuplicateEmployeePunchedHoursRow)(e.Row)), e.Action));
+                if ((this.FindAholaClockPunchesForVerificationRowDeleting != null)) {
+                    this.FindAholaClockPunchesForVerificationRowDeleting(this, new FindAholaClockPunchesForVerificationRowChangeEvent(((FindAholaClockPunchesForVerificationRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveFindDuplicateEmployeePunchedHoursRow(FindDuplicateEmployeePunchedHoursRow row) {
+            public void RemoveFindAholaClockPunchesForVerificationRow(FindAholaClockPunchesForVerificationRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -538,7 +659,7 @@ namespace EmployeePunchedHoursDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindDuplicateEmployeePunchedHoursDataSet ds = new FindDuplicateEmployeePunchedHoursDataSet();
+                FindAholaClockPunchesForVerificationDataSet ds = new FindAholaClockPunchesForVerificationDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -556,7 +677,7 @@ namespace EmployeePunchedHoursDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FindDuplicateEmployeePunchedHoursDataTable";
+                attribute2.FixedValue = "FindAholaClockPunchesForVerificationDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -600,99 +721,158 @@ namespace EmployeePunchedHoursDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FindDuplicateEmployeePunchedHoursRow : global::System.Data.DataRow {
+        public partial class FindAholaClockPunchesForVerificationRow : global::System.Data.DataRow {
             
-            private FindDuplicateEmployeePunchedHoursDataTable tableFindDuplicateEmployeePunchedHours;
+            private FindAholaClockPunchesForVerificationDataTable tableFindAholaClockPunchesForVerification;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FindDuplicateEmployeePunchedHoursRow(global::System.Data.DataRowBuilder rb) : 
+            internal FindAholaClockPunchesForVerificationRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFindDuplicateEmployeePunchedHours = ((FindDuplicateEmployeePunchedHoursDataTable)(this.Table));
+                this.tableFindAholaClockPunchesForVerification = ((FindAholaClockPunchesForVerificationDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TransactionID {
+                get {
+                    return ((int)(this[this.tableFindAholaClockPunchesForVerification.TransactionIDColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.TransactionIDColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int EmployeeID {
                 get {
-                    return ((int)(this[this.tableFindDuplicateEmployeePunchedHours.EmployeeIDColumn]));
+                    return ((int)(this[this.tableFindAholaClockPunchesForVerification.EmployeeIDColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.EmployeeIDColumn] = value;
+                    this[this.tableFindAholaClockPunchesForVerification.EmployeeIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FirstName {
+            public int PayID {
                 get {
-                    return ((string)(this[this.tableFindDuplicateEmployeePunchedHours.FirstNameColumn]));
+                    return ((int)(this[this.tableFindAholaClockPunchesForVerification.PayIDColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.FirstNameColumn] = value;
+                    this[this.tableFindAholaClockPunchesForVerification.PayIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string LastName {
+            public System.DateTime ActualDateTime {
                 get {
-                    return ((string)(this[this.tableFindDuplicateEmployeePunchedHours.LastNameColumn]));
+                    return ((global::System.DateTime)(this[this.tableFindAholaClockPunchesForVerification.ActualDateTimeColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.LastNameColumn] = value;
+                    this[this.tableFindAholaClockPunchesForVerification.ActualDateTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal PunchedHours {
+            public System.DateTime PunchDateTime {
                 get {
-                    return ((decimal)(this[this.tableFindDuplicateEmployeePunchedHours.PunchedHoursColumn]));
+                    return ((global::System.DateTime)(this[this.tableFindAholaClockPunchesForVerification.PunchDateTimeColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.PunchedHoursColumn] = value;
+                    this[this.tableFindAholaClockPunchesForVerification.PunchDateTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime TransactionDate {
+            public System.DateTime CreatedDateTime {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFindDuplicateEmployeePunchedHours.TransactionDateColumn]));
+                    return ((global::System.DateTime)(this[this.tableFindAholaClockPunchesForVerification.CreatedDateTimeColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.TransactionDateColumn] = value;
+                    this[this.tableFindAholaClockPunchesForVerification.CreatedDateTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TimesIN {
+            public string PayGroup {
                 get {
-                    try {
-                        return ((int)(this[this.tableFindDuplicateEmployeePunchedHours.TimesINColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TimesIN\' in table \'FindDuplicateEmployeePunchedHours\' is DB" +
-                                "Null.", e);
-                    }
+                    return ((string)(this[this.tableFindAholaClockPunchesForVerification.PayGroupColumn]));
                 }
                 set {
-                    this[this.tableFindDuplicateEmployeePunchedHours.TimesINColumn] = value;
+                    this[this.tableFindAholaClockPunchesForVerification.PayGroupColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTimesINNull() {
-                return this.IsNull(this.tableFindDuplicateEmployeePunchedHours.TimesINColumn);
+            public string PunchMode {
+                get {
+                    return ((string)(this[this.tableFindAholaClockPunchesForVerification.PunchModeColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.PunchModeColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTimesINNull() {
-                this[this.tableFindDuplicateEmployeePunchedHours.TimesINColumn] = global::System.Convert.DBNull;
+            public string PunchType {
+                get {
+                    return ((string)(this[this.tableFindAholaClockPunchesForVerification.PunchTypeColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.PunchTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PunchSource {
+                get {
+                    return ((string)(this[this.tableFindAholaClockPunchesForVerification.PunchSourceColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.PunchSourceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PunchUser {
+                get {
+                    return ((string)(this[this.tableFindAholaClockPunchesForVerification.PunchUserColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.PunchUserColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PunchIPAddress {
+                get {
+                    return ((string)(this[this.tableFindAholaClockPunchesForVerification.PunchIPAddressColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.PunchIPAddressColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime LastUpdate {
+                get {
+                    return ((global::System.DateTime)(this[this.tableFindAholaClockPunchesForVerification.LastUpdateColumn]));
+                }
+                set {
+                    this[this.tableFindAholaClockPunchesForVerification.LastUpdateColumn] = value;
+                }
             }
         }
         
@@ -700,22 +880,22 @@ namespace EmployeePunchedHoursDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class FindDuplicateEmployeePunchedHoursRowChangeEvent : global::System.EventArgs {
+        public class FindAholaClockPunchesForVerificationRowChangeEvent : global::System.EventArgs {
             
-            private FindDuplicateEmployeePunchedHoursRow eventRow;
+            private FindAholaClockPunchesForVerificationRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRowChangeEvent(FindDuplicateEmployeePunchedHoursRow row, global::System.Data.DataRowAction action) {
+            public FindAholaClockPunchesForVerificationRowChangeEvent(FindAholaClockPunchesForVerificationRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindDuplicateEmployeePunchedHoursRow Row {
+            public FindAholaClockPunchesForVerificationRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -731,7 +911,7 @@ namespace EmployeePunchedHoursDLL {
         }
     }
 }
-namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableAdapters {
+namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTableAdapters {
     
     
     /// <summary>
@@ -743,7 +923,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class FindDuplicateEmployeePunchedHoursTableAdapter : global::System.ComponentModel.Component {
+    public partial class FindAholaClockPunchesForVerificationTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -757,7 +937,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindDuplicateEmployeePunchedHoursTableAdapter() {
+        public FindAholaClockPunchesForVerificationTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -854,13 +1034,20 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "FindDuplicateEmployeePunchedHours";
+            tableMapping.DataSetTable = "FindAholaClockPunchesForVerification";
+            tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
             tableMapping.ColumnMappings.Add("EmployeeID", "EmployeeID");
-            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
-            tableMapping.ColumnMappings.Add("LastName", "LastName");
-            tableMapping.ColumnMappings.Add("PunchedHours", "PunchedHours");
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
-            tableMapping.ColumnMappings.Add("TimesIN", "TimesIN");
+            tableMapping.ColumnMappings.Add("PayID", "PayID");
+            tableMapping.ColumnMappings.Add("ActualDateTime", "ActualDateTime");
+            tableMapping.ColumnMappings.Add("PunchDateTime", "PunchDateTime");
+            tableMapping.ColumnMappings.Add("CreatedDateTime", "CreatedDateTime");
+            tableMapping.ColumnMappings.Add("PayGroup", "PayGroup");
+            tableMapping.ColumnMappings.Add("PunchMode", "PunchMode");
+            tableMapping.ColumnMappings.Add("PunchType", "PunchType");
+            tableMapping.ColumnMappings.Add("PunchSource", "PunchSource");
+            tableMapping.ColumnMappings.Add("PunchUser", "PunchUser");
+            tableMapping.ColumnMappings.Add("PunchIPAddress", "PunchIPAddress");
+            tableMapping.ColumnMappings.Add("LastUpdate", "LastUpdate");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -877,23 +1064,51 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.FindDuplicateEmployeePunchedHours";
+            this._commandCollection[0].CommandText = "dbo.FindAholaClockPunchesForVerification";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ActualDateTime", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchDateTime", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedDateTime", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchIPAddress", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable dataTable, global::System.Nullable<global::System.DateTime> TransactionDate) {
+        public virtual int Fill(FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable dataTable, global::System.Nullable<int> PayID, global::System.Nullable<global::System.DateTime> ActualDateTime, global::System.Nullable<global::System.DateTime> PunchDateTime, global::System.Nullable<global::System.DateTime> CreatedDateTime, string PunchIPAddress) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((TransactionDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(TransactionDate.Value));
+            if ((PayID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(PayID.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((ActualDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(ActualDateTime.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((PunchDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(PunchDateTime.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((CreatedDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(CreatedDateTime.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PunchIPAddress == null)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(PunchIPAddress));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -906,15 +1121,39 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable GetData(global::System.Nullable<global::System.DateTime> TransactionDate) {
+        public virtual FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable GetData(global::System.Nullable<int> PayID, global::System.Nullable<global::System.DateTime> ActualDateTime, global::System.Nullable<global::System.DateTime> PunchDateTime, global::System.Nullable<global::System.DateTime> CreatedDateTime, string PunchIPAddress) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((TransactionDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(TransactionDate.Value));
+            if ((PayID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(PayID.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable dataTable = new FindDuplicateEmployeePunchedHoursDataSet.FindDuplicateEmployeePunchedHoursDataTable();
+            if ((ActualDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(ActualDateTime.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((PunchDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(PunchDateTime.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((CreatedDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(CreatedDateTime.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PunchIPAddress == null)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(PunchIPAddress));
+            }
+            FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable dataTable = new FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -988,7 +1227,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(FindDuplicateEmployeePunchedHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindAholaClockPunchesForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -998,7 +1237,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(FindDuplicateEmployeePunchedHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindAholaClockPunchesForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1008,7 +1247,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(FindDuplicateEmployeePunchedHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindAholaClockPunchesForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1042,7 +1281,7 @@ namespace EmployeePunchedHoursDLL.FindDuplicateEmployeePunchedHoursDataSetTableA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(FindDuplicateEmployeePunchedHoursDataSet dataSet) {
+        public virtual int UpdateAll(FindAholaClockPunchesForVerificationDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
