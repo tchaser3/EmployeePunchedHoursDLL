@@ -72,6 +72,42 @@ namespace EmployeePunchedHoursDLL
 
         UpdateAlohaTimePunchesEntryTableAdapters.QueriesTableAdapter aUpdateAlohatimePunchesTableAdapter;
 
+        FindEmployeePunchedHoursForEditingDataSet aFindEmployeePunchedHoursForEditingDataSet;
+        FindEmployeePunchedHoursForEditingDataSetTableAdapters.FindEmployeePunchedHoursForEditingTableAdapter aFindEmployeePunchedHoursForEditingTableAdapter;
+
+        FindAholaEmployeePunchHoursDataSet aFindAholaEmployeePunchHoursDataSet;
+        FindAholaEmployeePunchHoursDataSetTableAdapters.FindAholaEmployeePunchHoursTableAdapter aFindAholaEmployeePunchHoursTableAdapter;
+
+        public FindAholaEmployeePunchHoursDataSet FindAholaEmployeePunchHours(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAholaEmployeePunchHoursDataSet = new FindAholaEmployeePunchHoursDataSet();
+                aFindAholaEmployeePunchHoursTableAdapter = new FindAholaEmployeePunchHoursDataSetTableAdapters.FindAholaEmployeePunchHoursTableAdapter();
+                aFindAholaEmployeePunchHoursTableAdapter.Fill(aFindAholaEmployeePunchHoursDataSet.FindAholaEmployeePunchHours, intEmployeeID, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Ahola Employee Punch Hours " + Ex.Message);
+            }
+
+            return aFindAholaEmployeePunchHoursDataSet;
+        }
+        public FindEmployeePunchedHoursForEditingDataSet FindEmployeePunchedHoursForEditing(DateTime datPayPeriod)
+        {
+            try
+            {
+                aFindEmployeePunchedHoursForEditingDataSet = new FindEmployeePunchedHoursForEditingDataSet();
+                aFindEmployeePunchedHoursForEditingTableAdapter = new FindEmployeePunchedHoursForEditingDataSetTableAdapters.FindEmployeePunchedHoursForEditingTableAdapter();
+                aFindEmployeePunchedHoursForEditingTableAdapter.Fill(aFindEmployeePunchedHoursForEditingDataSet.FindEmployeePunchedHoursForEditing, datPayPeriod);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Employee Punched Hours For Editing " + Ex.Message);
+            }
+
+            return aFindEmployeePunchedHoursForEditingDataSet;
+        }
         public bool UpdateAlohaTimePunches(int intTransactionID, DateTime datStartDate, DateTime datEndDate, decimal decDailyHours)
         {
             bool blnFatalError = false;
@@ -131,7 +167,7 @@ namespace EmployeePunchedHoursDLL
             }
             catch (Exception Ex)
             {
-                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Insert Ahola Clock Punches " + Ex.Message);
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Insert Ahola Clock Punches " + Ex.ToString());
 
                 blnFatalError = true;
             }

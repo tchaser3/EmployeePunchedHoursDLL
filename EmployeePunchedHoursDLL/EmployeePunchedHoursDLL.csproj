@@ -76,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindAholaEmployeePunchForVerificationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindAholaEmployeePunchHoursDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAholaEmployeePunchHoursDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindAholaEmployeeTotalHoursDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +110,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeePunchedHoursForEditingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeePunchedHoursForEditingDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FindEmployeePunchedHoursForValidationDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -221,6 +231,17 @@
     <None Include="FindAholaEmployeePunchForVerificationDataSet.xss">
       <DependentUpon>FindAholaEmployeePunchForVerificationDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FindAholaEmployeePunchHoursDataSet1.xsc">
+      <DependentUpon>FindAholaEmployeePunchHoursDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaEmployeePunchHoursDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAholaEmployeePunchHoursDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAholaEmployeePunchHoursDataSet1.xss">
+      <DependentUpon>FindAholaEmployeePunchHoursDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="FindAholaEmployeeTotalHoursDataSet.xsc">
       <DependentUpon>FindAholaEmployeeTotalHoursDataSet.xsd</DependentUpon>
     </None>
@@ -286,6 +307,17 @@
     </None>
     <None Include="FindEmployeePunchedHoursDataSet.xss">
       <DependentUpon>FindEmployeePunchedHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeePunchedHoursForEditingDataSet.xsc">
+      <DependentUpon>FindEmployeePunchedHoursForEditingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeePunchedHoursForEditingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeePunchedHoursForEditingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeePunchedHoursForEditingDataSet.xss">
+      <DependentUpon>FindEmployeePunchedHoursForEditingDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeePunchedHoursForValidationDataSet.xsc">
       <DependentUpon>FindEmployeePunchedHoursForValidationDataSet.xsd</DependentUpon>
