@@ -101,6 +101,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindAlohaEmployeePunchesByManagerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindAlohaEmployeePunchesPossiblyBadDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAlohaEmployeePunchesPossiblyBadDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindAlohaTimePunchesByTransactionIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAlohaTimePunchesByTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindDuplicateEmployeePunchedHoursDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +171,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UpdateAlohaTimePunchesEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeePunchedHoursEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateEmployeePunchedHoursEntry.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +301,28 @@
     <None Include="FindAlohaEmployeePunchesByManagerDataSet.xss">
       <DependentUpon>FindAlohaEmployeePunchesByManagerDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FindAlohaEmployeePunchesPossiblyBadDataSet.xsc">
+      <DependentUpon>FindAlohaEmployeePunchesPossiblyBadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaEmployeePunchesPossiblyBadDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAlohaEmployeePunchesPossiblyBadDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAlohaEmployeePunchesPossiblyBadDataSet.xss">
+      <DependentUpon>FindAlohaEmployeePunchesPossiblyBadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaTimePunchesByTransactionIDDataSet.xsc">
+      <DependentUpon>FindAlohaTimePunchesByTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAlohaTimePunchesByTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAlohaTimePunchesByTransactionIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAlohaTimePunchesByTransactionIDDataSet.xss">
+      <DependentUpon>FindAlohaTimePunchesByTransactionIDDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindDuplicateEmployeePunchedHoursDataSet.xsc">
       <DependentUpon>FindDuplicateEmployeePunchedHoursDataSet.xsd</DependentUpon>
     </None>
@@ -410,6 +447,17 @@
     </None>
     <None Include="UpdateAlohaTimePunchesEntry.xss">
       <DependentUpon>UpdateAlohaTimePunchesEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeePunchedHoursEntry.xsc">
+      <DependentUpon>UpdateEmployeePunchedHoursEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeePunchedHoursEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateEmployeePunchedHoursEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateEmployeePunchedHoursEntry.xss">
+      <DependentUpon>UpdateEmployeePunchedHoursEntry.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
