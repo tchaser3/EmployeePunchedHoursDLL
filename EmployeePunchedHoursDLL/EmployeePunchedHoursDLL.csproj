@@ -66,6 +66,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindAholaClockPUnchesForEmployeeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindAholaClockPunchesForEmployeeDayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAholaClockPunchesForEmployeeDayDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindAholaClockPunchesForVerificationDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -223,6 +228,17 @@
     </None>
     <None Include="FindAholaClockPUnchesForEmployeeDataSet.xss">
       <DependentUpon>FindAholaClockPUnchesForEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaClockPunchesForEmployeeDayDataSet.xsc">
+      <DependentUpon>FindAholaClockPunchesForEmployeeDayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAholaClockPunchesForEmployeeDayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAholaClockPunchesForEmployeeDayDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAholaClockPunchesForEmployeeDayDataSet.xss">
+      <DependentUpon>FindAholaClockPunchesForEmployeeDayDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindAholaClockPunchesForVerificationDataSet.xsc">
       <DependentUpon>FindAholaClockPunchesForVerificationDataSet.xsd</DependentUpon>

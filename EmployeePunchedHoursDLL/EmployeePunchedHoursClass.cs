@@ -86,6 +86,24 @@ namespace EmployeePunchedHoursDLL
         FindAlohaTimePunchesByTransactionIDDataSet aFindAlohaTimePunchesByTransactionIDDataSet;
         FindAlohaTimePunchesByTransactionIDDataSetTableAdapters.FindAlohaTimePunchesByTransactionIDTableAdapter aFindAlohaTimePunchesByTransactionIDTableAdapter;
 
+        FindAholaClockPunchesForEmployeeDayDataSet aFindAholaClockPunchesForEmployeeDayDataSet;
+        FindAholaClockPunchesForEmployeeDayDataSetTableAdapters.FindAholaClockPunchesForEmployeeDayTableAdapter aFindAholaClockPunchesForEmployeeDayTableAdapter;
+
+        public FindAholaClockPunchesForEmployeeDayDataSet FindAholaClockPunchesForEmployeeDay(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAholaClockPunchesForEmployeeDayDataSet = new FindAholaClockPunchesForEmployeeDayDataSet();
+                aFindAholaClockPunchesForEmployeeDayTableAdapter = new FindAholaClockPunchesForEmployeeDayDataSetTableAdapters.FindAholaClockPunchesForEmployeeDayTableAdapter();
+                aFindAholaClockPunchesForEmployeeDayTableAdapter.Fill(aFindAholaClockPunchesForEmployeeDayDataSet.FindAholaClockPunchesForEmployeeDay, intEmployeeID, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Punched Hours Class // Find Ahola Clock Punches For Employee " + Ex.Message);
+            }
+
+            return aFindAholaClockPunchesForEmployeeDayDataSet;
+        }
         public FindAlohaTimePunchesByTransactionIDDataSet FindAlohaTimePunchesByTransactionID(int intTransactionID)
         {
             try
