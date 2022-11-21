@@ -20,9 +20,9 @@ namespace EmployeePunchedHoursDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindAholaClockPunchesForVerificationDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindAholaPunchForVerificationDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindAholaClockPunchesForVerificationDataSet : global::System.Data.DataSet {
+    public partial class FindAholaPunchForVerificationDataSet : global::System.Data.DataSet {
         
         private FindAholaClockPunchesForVerificationDataTable tableFindAholaClockPunchesForVerification;
         
@@ -30,7 +30,7 @@ namespace EmployeePunchedHoursDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindAholaClockPunchesForVerificationDataSet() {
+        public FindAholaPunchForVerificationDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace EmployeePunchedHoursDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected FindAholaClockPunchesForVerificationDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindAholaPunchForVerificationDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindAholaClockPunchesForVerificationDataSet cln = ((FindAholaClockPunchesForVerificationDataSet)(base.Clone()));
+            FindAholaPunchForVerificationDataSet cln = ((FindAholaPunchForVerificationDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindAholaClockPunchesForVerificationDataSet";
+            this.DataSetName = "FindAholaPunchForVerificationDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindAholaClockPunchesForVerificationDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindAholaPunchForVerificationDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableFindAholaClockPunchesForVerification = new FindAholaClockPunchesForVerificationDataTable();
@@ -225,7 +225,7 @@ namespace EmployeePunchedHoursDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindAholaClockPunchesForVerificationDataSet ds = new FindAholaClockPunchesForVerificationDataSet();
+            FindAholaPunchForVerificationDataSet ds = new FindAholaPunchForVerificationDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -659,7 +659,7 @@ namespace EmployeePunchedHoursDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindAholaClockPunchesForVerificationDataSet ds = new FindAholaClockPunchesForVerificationDataSet();
+                FindAholaPunchForVerificationDataSet ds = new FindAholaPunchForVerificationDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -911,7 +911,7 @@ namespace EmployeePunchedHoursDLL {
         }
     }
 }
-namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTableAdapters {
+namespace EmployeePunchedHoursDLL.FindAholaPunchForVerificationDataSetTableAdapters {
     
     
     /// <summary>
@@ -1070,6 +1070,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ActualDateTime", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchDateTime", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedDateTime", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PunchIPAddress", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1077,7 +1078,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable dataTable, global::System.Nullable<int> PayID, global::System.Nullable<global::System.DateTime> ActualDateTime, global::System.Nullable<global::System.DateTime> PunchDateTime, string PunchIPAddress) {
+        public virtual int Fill(FindAholaPunchForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable dataTable, global::System.Nullable<int> PayID, global::System.Nullable<global::System.DateTime> ActualDateTime, global::System.Nullable<global::System.DateTime> PunchDateTime, global::System.Nullable<global::System.DateTime> CreatedDateTime, string PunchIPAddress) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((PayID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(PayID.Value));
@@ -1097,11 +1098,17 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
             else {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((PunchIPAddress == null)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            if ((CreatedDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(CreatedDateTime.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(PunchIPAddress));
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PunchIPAddress == null)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(PunchIPAddress));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1114,7 +1121,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable GetData(global::System.Nullable<int> PayID, global::System.Nullable<global::System.DateTime> ActualDateTime, global::System.Nullable<global::System.DateTime> PunchDateTime, string PunchIPAddress) {
+        public virtual FindAholaPunchForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable GetData(global::System.Nullable<int> PayID, global::System.Nullable<global::System.DateTime> ActualDateTime, global::System.Nullable<global::System.DateTime> PunchDateTime, global::System.Nullable<global::System.DateTime> CreatedDateTime, string PunchIPAddress) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((PayID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(PayID.Value));
@@ -1134,13 +1141,19 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
             else {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((PunchIPAddress == null)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            if ((CreatedDateTime.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(CreatedDateTime.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(PunchIPAddress));
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable dataTable = new FindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable();
+            if ((PunchIPAddress == null)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(PunchIPAddress));
+            }
+            FindAholaPunchForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable dataTable = new FindAholaPunchForVerificationDataSet.FindAholaClockPunchesForVerificationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1214,7 +1227,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(FindAholaClockPunchesForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindAholaPunchForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1224,7 +1237,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(FindAholaClockPunchesForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindAholaPunchForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1234,7 +1247,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(FindAholaClockPunchesForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindAholaPunchForVerificationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1268,7 +1281,7 @@ namespace EmployeePunchedHoursDLL.FindAholaClockPunchesForVerificationDataSetTab
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(FindAholaClockPunchesForVerificationDataSet dataSet) {
+        public virtual int UpdateAll(FindAholaPunchForVerificationDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

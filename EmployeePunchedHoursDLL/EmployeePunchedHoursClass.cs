@@ -198,13 +198,13 @@ namespace EmployeePunchedHoursDLL
 
             return blnFatalError;
         }
-        public FindAholaClockPunchesForVerificationDataSet FindAholaClockPunchesForVerification(int intPayID, DateTime datActualDateTime, DateTime datPunchDateTime, DateTime datCreatedDateTime, string strPunchIPAddress)
+        public FindAholaClockPunchesForVerificationDataSet FindAholaClockPunchesForVerification(int intPayID, DateTime datActualDateTime, DateTime datPunchDateTime, string strPunchIPAddress)
         {
             try
             {
                 aFindAholaClockPunchesForVerificationDataSet = new FindAholaClockPunchesForVerificationDataSet();
                 aFindAholaClockPunchesForVerificationTableAdapter = new FindAholaClockPunchesForVerificationDataSetTableAdapters.FindAholaClockPunchesForVerificationTableAdapter();
-                aFindAholaClockPunchesForVerificationTableAdapter.Fill(aFindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerification, intPayID, datActualDateTime, datPunchDateTime, datCreatedDateTime, strPunchIPAddress);
+                aFindAholaClockPunchesForVerificationTableAdapter.Fill(aFindAholaClockPunchesForVerificationDataSet.FindAholaClockPunchesForVerification, intPayID, datActualDateTime, datPunchDateTime, strPunchIPAddress);
             }
             catch (Exception Ex)
             {
